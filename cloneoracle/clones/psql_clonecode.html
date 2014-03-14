@@ -1,0 +1,1703 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="../js/clonelisting.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/clones.css">
+<title>PostgreSQL Clones</title>
+
+</head>
+
+<body>
+
+<!-- This will probably go into the regular format of the page-->
+<h1>PostgreSQL Code Clones</h1>
+
+<p>
+This page shows the identified clones for PostgreSQL. These clones may also be downloaded in .xlsx, html and .csv format <a href="../clonecode/postgre/postgre.zip">here</a>.
+</p>
+<p>
+The source code of each clone may be viewed on by clicking each method group.
+</p>
+
+
+
+
+<!------------------  Start Item 1 -------------------------------->
+<script>
+var fullCloneInfo = "readfuncs._readwindowfunc()-readfuncs._readaggref()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static WindowFunc *
+_readWindowFunc(void)
+{
+ READ_LOCALS(WindowFunc);
+
+ READ_OID_FIELD(winfnoid);
+ READ_OID_FIELD(wintype);
+ READ_NODE_FIELD(args);
+ READ_UINT_FIELD(winref);
+ READ_BOOL_FIELD(winstar);
+ READ_BOOL_FIELD(winagg);
+ READ_LOCATION_FIELD(location);
+
+ READ_DONE();
+}
+</code></pre></td>
+
+<td><pre><code>
+static Aggref *
+_readAggref(void)
+{
+ READ_LOCALS(Aggref);
+
+ READ_OID_FIELD(aggfnoid);
+ READ_OID_FIELD(aggtype);
+ READ_NODE_FIELD(args);
+ READ_UINT_FIELD(agglevelsup);
+ READ_BOOL_FIELD(aggstar);
+ READ_BOOL_FIELD(aggdistinct);
+ READ_LOCATION_FIELD(location);
+
+ READ_DONE();
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+<!------------------  Start Item 2 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outindexscan()-outfuncs._outsubqueryscan()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outIndexScan(StringInfo str, IndexScan *node)
+{
+ WRITE_NODE_TYPE(""INDEXSCAN"");
+
+ _outScanInfo(str, (Scan *) node);
+
+ WRITE_OID_FIELD(indexid);
+ WRITE_NODE_FIELD(indexqual);
+ WRITE_NODE_FIELD(indexqualorig);
+ WRITE_ENUM_FIELD(indexorderdir, ScanDirection);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outSubqueryScan(StringInfo str, SubqueryScan *node)
+{
+ WRITE_NODE_TYPE(""SUBQUERYSCAN"");
+
+ _outScanInfo(str, (Scan *) node);
+
+ WRITE_NODE_FIELD(subplan);
+ WRITE_NODE_FIELD(subrtable);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 3 -------------------------------->
+<script>
+var fullCloneInfo = "list.lcons_int()-list.lappend_int()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+List *
+lcons_int(int datum, List *list)
+{
+ Assert(IsIntegerList(list));
+
+ if (list == NIL)
+  list = new_list(T_IntList);
+ else
+  new_head_cell(list);
+
+ lfirst_int(list->head) = datum;
+ check_list_invariants(list);
+ return list;
+}
+</code></pre></td>
+
+<td><pre><code>
+List *
+lappend_int(List *list, int datum)
+{
+ Assert(IsIntegerList(list));
+
+ if (list == NIL)
+  list = new_list(T_IntList);
+ else
+  new_tail_cell(list);
+
+ lfirst_int(list->tail) = datum;
+ check_list_invariants(list);
+ return list;
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 4 -------------------------------->
+<script>
+var fullCloneInfo = "readfuncs._readcoerceviaio()-readfuncs._readminmaxexpr()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static CoerceViaIO *
+_readCoerceViaIO(void)
+{
+ READ_LOCALS(CoerceViaIO);
+
+ READ_NODE_FIELD(arg);
+ READ_OID_FIELD(resulttype);
+ READ_ENUM_FIELD(coerceformat, CoercionForm);
+ READ_LOCATION_FIELD(location);
+
+ READ_DONE();
+}
+</code></pre></td>
+
+<td><pre><code>
+static MinMaxExpr *
+_readMinMaxExpr(void)
+{
+ READ_LOCALS(MinMaxExpr);
+
+ READ_OID_FIELD(minmaxtype);
+ READ_ENUM_FIELD(op, MinMaxOp);
+ READ_NODE_FIELD(args);
+ READ_LOCATION_FIELD(location);
+
+ READ_DONE();
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 5 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outa_arrayexpr()-outfuncs._outcasetestexpr()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outA_ArrayExpr(StringInfo str, A_ArrayExpr *node)
+{
+ WRITE_NODE_TYPE(""A_ARRAYEXPR"");
+
+ WRITE_NODE_FIELD(elements);
+ WRITE_LOCATION_FIELD(location);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outCaseTestExpr(StringInfo str, CaseTestExpr *node)
+{
+ WRITE_NODE_TYPE(""CASETESTEXPR"");
+
+ WRITE_OID_FIELD(typeId);
+ WRITE_INT_FIELD(typeMod);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 6 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outmaterialpath()-outfuncs._outbitmapheapscan()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outMaterialPath(StringInfo str, MaterialPath *node)
+{
+ WRITE_NODE_TYPE(""MATERIALPATH"");
+
+ _outPathInfo(str, (Path *) node);
+
+ WRITE_NODE_FIELD(subpath);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outBitmapHeapScan(StringInfo str, BitmapHeapScan *node)
+{
+ WRITE_NODE_TYPE(""BITMAPHEAPSCAN"");
+
+ _outScanInfo(str, (Scan *) node);
+
+ WRITE_NODE_FIELD(bitmapqualorig);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 7 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outmaterialpath()-outfuncs._outsubqueryscan()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outMaterialPath(StringInfo str, MaterialPath *node)
+{
+ WRITE_NODE_TYPE(""MATERIALPATH"");
+
+ _outPathInfo(str, (Path *) node);
+
+ WRITE_NODE_FIELD(subpath);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outSubqueryScan(StringInfo str, SubqueryScan *node)
+{
+ WRITE_NODE_TYPE(""SUBQUERYSCAN"");
+
+ _outScanInfo(str, (Scan *) node);
+
+ WRITE_NODE_FIELD(subplan);
+ WRITE_NODE_FIELD(subrtable);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 8 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outhashpath()-outfuncs._outlimit()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outHashPath(StringInfo str, HashPath *node)
+{
+ WRITE_NODE_TYPE(""HASHPATH"");
+
+ _outJoinPathInfo(str, (JoinPath *) node);
+
+ WRITE_NODE_FIELD(path_hashclauses);
+ WRITE_INT_FIELD(num_batches);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outLimit(StringInfo str, Limit *node)
+{
+ WRITE_NODE_TYPE(""LIMIT"");
+
+ _outPlanInfo(str, (Plan *) node);
+
+ WRITE_NODE_FIELD(limitOffset);
+ WRITE_NODE_FIELD(limitCount);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 9 -------------------------------->
+<script>
+var fullCloneInfo = "list.list_append_unique_oid()-list.list_append_unique_ptr()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+List *
+list_append_unique_oid(List *list, Oid datum)
+{
+ if (list_member_oid(list, datum))
+  return list;
+ else
+  return lappend_oid(list, datum);
+}
+</code></pre></td>
+
+<td><pre><code>
+List *
+list_append_unique_ptr(List *list, void *datum)
+{
+ if (list_member_ptr(list, datum))
+  return list;
+ else
+  return lappend(list, datum);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 10 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outrangesubselect()-outfuncs._outa_arrayexpr()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outRangeSubselect(StringInfo str, RangeSubselect *node)
+{
+ WRITE_NODE_TYPE(""RANGESUBSELECT"");
+
+ WRITE_NODE_FIELD(subquery);
+ WRITE_NODE_FIELD(alias);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outA_ArrayExpr(StringInfo str, A_ArrayExpr *node)
+{
+ WRITE_NODE_TYPE(""A_ARRAYEXPR"");
+
+ WRITE_NODE_FIELD(elements);
+ WRITE_LOCATION_FIELD(location);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 11 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outfunctionscan()-outfuncs._outlimit()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outFunctionScan(StringInfo str, FunctionScan *node)
+{
+ WRITE_NODE_TYPE(""FUNCTIONSCAN"");
+
+ _outScanInfo(str, (Scan *) node);
+
+ WRITE_NODE_FIELD(funcexpr);
+ WRITE_NODE_FIELD(funccolnames);
+ WRITE_NODE_FIELD(funccoltypes);
+ WRITE_NODE_FIELD(funccoltypmods);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outLimit(StringInfo str, Limit *node)
+{
+ WRITE_NODE_TYPE(""LIMIT"");
+
+ _outPlanInfo(str, (Plan *) node);
+
+ WRITE_NODE_FIELD(limitOffset);
+ WRITE_NODE_FIELD(limitCount);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 12 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outfunctionscan()-outfuncs._outintoclause()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outFunctionScan(StringInfo str, FunctionScan *node)
+{
+ WRITE_NODE_TYPE(""FUNCTIONSCAN"");
+
+ _outScanInfo(str, (Scan *) node);
+
+ WRITE_NODE_FIELD(funcexpr);
+ WRITE_NODE_FIELD(funccolnames);
+ WRITE_NODE_FIELD(funccoltypes);
+ WRITE_NODE_FIELD(funccoltypmods);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outIntoClause(StringInfo str, IntoClause *node)
+{
+ WRITE_NODE_TYPE(""INTOCLAUSE"");
+
+ WRITE_NODE_FIELD(rel);
+ WRITE_NODE_FIELD(colNames);
+ WRITE_NODE_FIELD(options);
+ WRITE_ENUM_FIELD(onCommit, OnCommitAction);
+ WRITE_STRING_FIELD(tableSpaceName);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 13 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outbitmapand()-outfuncs._outalternativesubplan()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outBitmapAndPath(StringInfo str, BitmapAndPath *node)
+{
+ WRITE_NODE_TYPE(""BITMAPANDPATH"");
+
+ _outPathInfo(str, (Path *) node);
+
+ WRITE_NODE_FIELD(bitmapquals);
+ WRITE_FLOAT_FIELD(bitmapselectivity, ""%.4f"");
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outAlternativeSubPlan(StringInfo str, AlternativeSubPlan *node)
+{
+ WRITE_NODE_TYPE(""ALTERNATIVESUBPLAN"");
+
+ WRITE_NODE_FIELD(subplans);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 14 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outalias()-outfuncs._outinhrelation()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outAlias(StringInfo str, Alias *node)
+{
+ WRITE_NODE_TYPE(""ALIAS"");
+
+ WRITE_STRING_FIELD(aliasname);
+ WRITE_NODE_FIELD(colnames);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outInhRelation(StringInfo str, InhRelation *node)
+{
+ WRITE_NODE_TYPE(""INHRELATION"");
+
+ WRITE_NODE_FIELD(relation);
+ WRITE_NODE_FIELD(options);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 15 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outtidpath()-outfuncs._outbitmapheapscan()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outTidPath(StringInfo str, TidPath *node)
+{
+ WRITE_NODE_TYPE(""TIDPATH"");
+
+ _outPathInfo(str, (Path *) node);
+
+ WRITE_NODE_FIELD(tidquals);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outBitmapHeapScan(StringInfo str, BitmapHeapScan *node)
+{
+ WRITE_NODE_TYPE(""BITMAPHEAPSCAN"");
+
+ _outScanInfo(str, (Scan *) node);
+
+ WRITE_NODE_FIELD(bitmapqualorig);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 16 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outappendpath()-outfuncs._outa_indirection()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outAppendPath(StringInfo str, AppendPath *node)
+{
+ WRITE_NODE_TYPE(""APPENDPATH"");
+
+ _outPathInfo(str, (Path *) node);
+
+ WRITE_NODE_FIELD(subpaths);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outA_Indirection(StringInfo str, A_Indirection *node)
+{
+ WRITE_NODE_TYPE(""A_INDIRECTION"");
+
+ WRITE_NODE_FIELD(arg);
+ WRITE_NODE_FIELD(indirection);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 17 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outbitmapor()-outfuncs._outa_indirection()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outBitmapOr(StringInfo str, BitmapOr *node)
+{
+ WRITE_NODE_TYPE(""BITMAPOR"");
+
+ _outPlanInfo(str, (Plan *) node);
+
+ WRITE_NODE_FIELD(bitmapplans);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outA_Indirection(StringInfo str, A_Indirection *node)
+{
+ WRITE_NODE_TYPE(""A_INDIRECTION"");
+
+ WRITE_NODE_FIELD(arg);
+ WRITE_NODE_FIELD(indirection);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 18 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outbitmapor()-outfuncs._outresultpath()";
+var cloneType = "2"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outBitmapOr(StringInfo str, BitmapOr *node)
+{
+ WRITE_NODE_TYPE(""BITMAPOR"");
+
+ _outPlanInfo(str, (Plan *) node);
+
+ WRITE_NODE_FIELD(bitmapplans);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outResultPath(StringInfo str, ResultPath *node)
+{
+ WRITE_NODE_TYPE(""RESULTPATH"");
+
+ _outPathInfo(str, (Path *) node);
+
+ WRITE_NODE_FIELD(quals);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 19 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outsubqueryscan()-outfuncs._outbitmapheapscan()";
+var cloneType = "3"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outSubqueryScan(StringInfo str, SubqueryScan *node)
+{
+ WRITE_NODE_TYPE(""SUBQUERYSCAN"");
+
+ _outScanInfo(str, (Scan *) node);
+
+ WRITE_NODE_FIELD(subplan);
+ WRITE_NODE_FIELD(subrtable);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outBitmapHeapScan(StringInfo str, BitmapHeapScan *node)
+{
+ WRITE_NODE_TYPE(""BITMAPHEAPSCAN"");
+
+ _outScanInfo(str, (Scan *) node);
+
+ WRITE_NODE_FIELD(bitmapqualorig);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 20 -------------------------------->
+<script>
+var fullCloneInfo = "readfuncs._readcoercetodomainvalue()-readfuncs._readminmaxexpr()";
+var cloneType = "3"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static CoerceToDomainValue *
+_readCoerceToDomainValue(void)
+{
+ READ_LOCALS(CoerceToDomainValue);
+
+ READ_OID_FIELD(typeId);
+ READ_INT_FIELD(typeMod);
+ READ_LOCATION_FIELD(location);
+
+ READ_DONE();
+}
+</code></pre></td>
+
+<td><pre><code>
+static MinMaxExpr *
+_readMinMaxExpr(void)
+{
+ READ_LOCALS(MinMaxExpr);
+
+ READ_OID_FIELD(minmaxtype);
+ READ_ENUM_FIELD(op, MinMaxOp);
+ READ_NODE_FIELD(args);
+ READ_LOCATION_FIELD(location);
+
+ READ_DONE();
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 21 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outalternativesubplan()-outfuncs._outresultpath()";
+var cloneType = "3"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outAlternativeSubPlan(StringInfo str, AlternativeSubPlan *node)
+{
+ WRITE_NODE_TYPE(""ALTERNATIVESUBPLAN"");
+
+ WRITE_NODE_FIELD(subplans);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outResultPath(StringInfo str, ResultPath *node)
+{
+ WRITE_NODE_TYPE(""RESULTPATH"");
+
+ _outPathInfo(str, (Path *) node);
+
+ WRITE_NODE_FIELD(quals);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 22 -------------------------------->
+<script>
+var fullCloneInfo = "readfuncs._readsublink()-readfuncs._readminmaxexpr()";
+var cloneType = "3"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static SubLink *
+_readSubLink(void)
+{
+ READ_LOCALS(SubLink);
+
+ READ_ENUM_FIELD(subLinkType, SubLinkType);
+ READ_NODE_FIELD(testexpr);
+ READ_NODE_FIELD(operName);
+ READ_NODE_FIELD(subselect);
+ READ_LOCATION_FIELD(location);
+
+ READ_DONE();
+}
+</code></pre></td>
+
+<td><pre><code>
+static MinMaxExpr *
+_readMinMaxExpr(void)
+{
+ READ_LOCALS(MinMaxExpr);
+
+ READ_OID_FIELD(minmaxtype);
+ READ_ENUM_FIELD(op, MinMaxOp);
+ READ_NODE_FIELD(args);
+ READ_LOCATION_FIELD(location);
+
+ READ_DONE();
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 23 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outindexpath()-outfuncs._outtypename()";
+var cloneType = "3"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outIndexPath(StringInfo str, IndexPath *node)
+{
+ WRITE_NODE_TYPE(""INDEXPATH"");
+
+ _outPathInfo(str, (Path *) node);
+
+ WRITE_NODE_FIELD(indexinfo);
+ WRITE_NODE_FIELD(indexclauses);
+ WRITE_NODE_FIELD(indexquals);
+ WRITE_BOOL_FIELD(isjoininner);
+ WRITE_ENUM_FIELD(indexscandir, ScanDirection);
+ WRITE_FLOAT_FIELD(indextotalcost, ""%.2f"");
+ WRITE_FLOAT_FIELD(indexselectivity, ""%.4f"");
+ WRITE_FLOAT_FIELD(rows, ""%.0f"");
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outTypeName(StringInfo str, TypeName *node)
+{
+ WRITE_NODE_TYPE(""TYPENAME"");
+
+ WRITE_NODE_FIELD(names);
+ WRITE_OID_FIELD(typeid);
+ WRITE_BOOL_FIELD(setof);
+ WRITE_BOOL_FIELD(pct_type);
+ WRITE_NODE_FIELD(typmods);
+ WRITE_INT_FIELD(typemod);
+ WRITE_NODE_FIELD(arrayBounds);
+ WRITE_LOCATION_FIELD(location);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 24 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outjoinplaninfo()-outfuncs._outresultpath()";
+var cloneType = "3"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outJoinPlanInfo(StringInfo str, Join *node)
+{
+ _outPlanInfo(str, (Plan *) node);
+
+ WRITE_ENUM_FIELD(jointype, JoinType);
+ WRITE_NODE_FIELD(joinqual);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outResultPath(StringInfo str, ResultPath *node)
+{
+ WRITE_NODE_TYPE(""RESULTPATH"");
+
+ _outPathInfo(str, (Path *) node);
+
+ WRITE_NODE_FIELD(quals);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 25 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outjoinplaninfo()-outfuncs._outappendpath()";
+var cloneType = "3"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outJoinPlanInfo(StringInfo str, Join *node)
+{
+ _outPlanInfo(str, (Plan *) node);
+
+ WRITE_ENUM_FIELD(jointype, JoinType);
+ WRITE_NODE_FIELD(joinqual);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outAppendPath(StringInfo str, AppendPath *node)
+{
+ WRITE_NODE_TYPE(""APPENDPATH"");
+
+ _outPathInfo(str, (Path *) node);
+
+ WRITE_NODE_FIELD(subpaths);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 26 -------------------------------->
+<script>
+var fullCloneInfo = "readfuncs._readxmlexpr()-readfuncs._readjoinexpr()";
+var cloneType = "3"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static XmlExpr *
+_readXmlExpr(void)
+{
+ READ_LOCALS(XmlExpr);
+
+ READ_ENUM_FIELD(op, XmlExprOp);
+ READ_STRING_FIELD(name);
+ READ_NODE_FIELD(named_args);
+ READ_NODE_FIELD(arg_names);
+ READ_NODE_FIELD(args);
+ READ_ENUM_FIELD(xmloption, XmlOptionType);
+ READ_OID_FIELD(type);
+ READ_INT_FIELD(typmod);
+ READ_LOCATION_FIELD(location);
+
+ READ_DONE();
+}
+</code></pre></td>
+
+<td><pre><code>
+static JoinExpr *
+_readJoinExpr(void)
+{
+ READ_LOCALS(JoinExpr);
+
+ READ_ENUM_FIELD(jointype, JoinType);
+ READ_BOOL_FIELD(isNatural);
+ READ_NODE_FIELD(larg);
+ READ_NODE_FIELD(rarg);
+ READ_NODE_FIELD(using);
+ READ_NODE_FIELD(quals);
+ READ_NODE_FIELD(alias);
+ READ_INT_FIELD(rtindex);
+
+ READ_DONE();
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 27 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outfieldselect()-outfuncs._outinhrelation()";
+var cloneType = "3"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outFieldSelect(StringInfo str, FieldSelect *node)
+{
+ WRITE_NODE_TYPE(""FIELDSELECT"");
+
+ WRITE_NODE_FIELD(arg);
+ WRITE_INT_FIELD(fieldnum);
+ WRITE_OID_FIELD(resulttype);
+ WRITE_INT_FIELD(resulttypmod);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outInhRelation(StringInfo str, InhRelation *node)
+{
+ WRITE_NODE_TYPE(""INHRELATION"");
+
+ WRITE_NODE_FIELD(relation);
+ WRITE_NODE_FIELD(options);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 28 -------------------------------->
+<script>
+var fullCloneInfo = "readfuncs._readscalararrayopexpr()-readfuncs._readwindowfunc()";
+var cloneType = "3"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static ScalarArrayOpExpr *
+_readScalarArrayOpExpr(void)
+{
+ READ_LOCALS(ScalarArrayOpExpr);
+
+ READ_OID_FIELD(opno);
+ READ_OID_FIELD(opfuncid);
+
+ /*
+  * The opfuncid is stored in the textual format primarily for debugging
+  * and documentation reasons.  We want to always read it as zero to force
+  * it to be re-looked-up in the pg_operator entry. This ensures that
+  * stored rules don't have hidden dependencies on operators' functions.
+  * (We don't currently support an ALTER OPERATOR command, but might
+  * someday.)
+  */
+ local_node->opfuncid = InvalidOid;
+
+ READ_BOOL_FIELD(useOr);
+ READ_NODE_FIELD(args);
+ READ_LOCATION_FIELD(location);
+
+ READ_DONE();
+}
+</code></pre></td>
+
+<td><pre><code>
+static WindowFunc *
+_readWindowFunc(void)
+{
+ READ_LOCALS(WindowFunc);
+
+ READ_OID_FIELD(winfnoid);
+ READ_OID_FIELD(wintype);
+ READ_NODE_FIELD(args);
+ READ_UINT_FIELD(winref);
+ READ_BOOL_FIELD(winstar);
+ READ_BOOL_FIELD(winagg);
+ READ_LOCATION_FIELD(location);
+
+ READ_DONE();
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 29 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outwithclause()-outfuncs._outinhrelation()";
+var cloneType = "4"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outWithClause(StringInfo str, WithClause *node)
+{
+ WRITE_NODE_TYPE(""WITHCLAUSE"");
+
+ WRITE_NODE_FIELD(ctes);
+ WRITE_BOOL_FIELD(recursive);
+ WRITE_LOCATION_FIELD(location);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outInhRelation(StringInfo str, InhRelation *node)
+{
+ WRITE_NODE_TYPE(""INHRELATION"");
+
+ WRITE_NODE_FIELD(relation);
+ WRITE_NODE_FIELD(options);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 30 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outresultpath()-outfuncs._outrangefunction()";
+var cloneType = "4"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outResultPath(StringInfo str, ResultPath *node)
+{
+ WRITE_NODE_TYPE(""RESULTPATH"");
+
+ _outPathInfo(str, (Path *) node);
+
+ WRITE_NODE_FIELD(quals);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outRangeFunction(StringInfo str, RangeFunction *node)
+{
+ WRITE_NODE_TYPE(""RANGEFUNCTION"");
+
+ WRITE_NODE_FIELD(funccallnode);
+ WRITE_NODE_FIELD(alias);
+ WRITE_NODE_FIELD(coldeflist);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 31 -------------------------------->
+<script>
+var fullCloneInfo = "pqformat.pq_sendtext()-pqformat.pq_sendstring()";
+var cloneType = "4"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+void
+pq_sendtext(StringInfo buf, const char *str, int slen)
+{
+ char    *p;
+
+ p = pg_server_to_client(str, slen);
+ if (p != str)    /* actual conversion has been done? */
+ {
+  slen = strlen(p);
+  appendBinaryStringInfo(buf, p, slen);
+  pfree(p);
+ }
+ else
+  appendBinaryStringInfo(buf, str, slen);
+}
+</code></pre></td>
+
+<td><pre><code>
+void
+pq_sendstring(StringInfo buf, const char *str)
+{
+ int   slen = strlen(str);
+ char    *p;
+
+ p = pg_server_to_client(str, slen);
+ if (p != str)    /* actual conversion has been done? */
+ {
+  slen = strlen(p);
+  appendBinaryStringInfo(buf, p, slen + 1);
+  pfree(p);
+ }
+ else
+  appendBinaryStringInfo(buf, str, slen + 1);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 32 -------------------------------->
+<script>
+var fullCloneInfo = "list.list_union_ptr()-list.list_intersection()";
+var cloneType = "4"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+List *
+list_union_ptr(List *list1, List *list2)
+{
+ List    *result;
+ ListCell   *cell;
+
+ Assert(IsPointerList(list1));
+ Assert(IsPointerList(list2));
+
+ result = list_copy(list1);
+ foreach(cell, list2)
+ {
+  if (!list_member_ptr(result, lfirst(cell)))
+   result = lappend(result, lfirst(cell));
+ }
+
+ check_list_invariants(result);
+ return result;
+}
+</code></pre></td>
+
+<td><pre><code>
+List *
+list_intersection(List *list1, List *list2)
+{
+ List    *result;
+ ListCell   *cell;
+
+ if (list1 == NIL || list2 == NIL)
+  return NIL;
+
+ Assert(IsPointerList(list1));
+ Assert(IsPointerList(list2));
+
+ result = NIL;
+ foreach(cell, list1)
+ {
+  if (list_member(list2, lfirst(cell)))
+   result = lappend(result, lfirst(cell));
+ }
+
+ check_list_invariants(result);
+ return result;
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+<!------------------  Start Item 33 -------------------------------->
+<script>
+var fullCloneInfo = "outfuncs._outtidpath()-outfuncs._outrangefunction()";
+var cloneType = "4"; // Will add on "Type x" when printed out
+</script>
+<div class="layer1"> 
+    <div class="heading"><div class="headingcontent"><script>updateCounter();</script></div>
+    <div class="headingcontent">
+        <li class="first"><script>document.write(getGroupInfo1(fullCloneInfo));</script></li>
+        <li class="last"><script>document.write(getGroupInfo2(fullCloneInfo));</script></li>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+<div class="content">
+<table class="codeblock">
+<th><script>document.write(getGroupInfo1(fullCloneInfo));</script></th><th><script>document.write(getGroupInfo2(fullCloneInfo));</script></th>
+<tr><td class="clonetypestyle"><script>document.write(cloneTypeText(cloneType));</script></td></tr>
+<tr><td><pre><code>
+static void
+_outTidPath(StringInfo str, TidPath *node)
+{
+ WRITE_NODE_TYPE(""TIDPATH"");
+
+ _outPathInfo(str, (Path *) node);
+
+ WRITE_NODE_FIELD(tidquals);
+}
+</code></pre></td>
+
+<td><pre><code>
+static void
+_outRangeFunction(StringInfo str, RangeFunction *node)
+{
+ WRITE_NODE_TYPE(""RANGEFUNCTION"");
+
+ WRITE_NODE_FIELD(funccallnode);
+ WRITE_NODE_FIELD(alias);
+ WRITE_NODE_FIELD(coldeflist);
+}
+</code></pre></td></tr>
+</table>
+</div>
+
+<!--------------------- End of Item ----------------------->
+
+
+
+
+
+</body>
+
+</html>
