@@ -1,0 +1,65 @@
+.layer1 {
+margin: 0;
+padding: 0;
+width: 400px;
+}
+
+.heading {
+margin: 1px;
+color: #000000;
+padding: 3px 10px;
+cursor: pointer;
+position: relative;
+background-color:#C0C0C0 ;
+
+}
+.headingcontent {
+float: left;
+}
+.content {
+padding: 5px 10px;
+font-size:1;
+background-color:#fafafa;
+}
+p { padding: 5px 0; }
+
+
+.codeblock {
+border:1px solid black;
+}
+th
+{
+background-color:#680000 ;
+color:white;
+}
+
+
+.clonetypestyle {
+style=font-family:arial;
+color:red;
+font-size:20px;
+}
+
+
+	li.first, li.second, li.last, li.sublist
+			{
+				list-style: none;
+             
+			}
+		li.first:before 
+			{
+				content: "\250C";
+			}
+		li.second:before 
+			{
+				content: "\251C";
+			}
+		li.last:before 
+			{
+				content: "\2514";
+			}
+            
+      li:hover {
+        text-decoration: underline;
+        font-weight: bold;
+}

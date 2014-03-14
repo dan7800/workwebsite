@@ -1,0 +1,794 @@
+Comparision,,Students,,Expert,Nicad-30,Nicad-40,Nicad-50,MeCC_95_20,MeCC_95_10,MeCC_95_4,MeCC_90_20,MeCC_90_10,MeCC_90_4,MeCC_80_20,MeCC_80_10,MeCC_80_4,MeCC_70_20,MeCC_70_10,MeCC_70_4,MeCC_60_20,MeCC_60_10,MeCC_60_4,MeCC_50_20,MeCC_50_10,MeCC_50_4,SimCad,CCCD-30
+mod_cache..cache_out_filter()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_out_filter()-mod_cache..set_cache_store_nostore(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_out_filter()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..mmap_handler()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..mmap_handler()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..mmap_handler()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0
+mod_file_cache..mmap_handler()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..add_cache_disable()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,0
+mod_cache..add_cache_disable()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,1,1,1,1,0,0
+mod_cache..add_cache_disable()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_cache_disable()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..add_cache_disable()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..sendfile_handler()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_file_cache..sendfile_handler()-mod_cache..set_cache_store_nostore(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_file_cache..sendfile_handler()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0
+mod_file_cache..sendfile_handler()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..sendfile_handler()-mod_file_cache..mmap_handler(),,0.25,,Type 2,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_file_cache..sendfile_handler()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..cache_remove_url_filter()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_cache..cache_remove_url_filter()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..cache_remove_url_filter()-http_core..ap_process_http_async_connection(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0
+mod_cache..cache_remove_url_filter()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_remove_url_filter()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,0,0
+mod_cache..cache_remove_url_filter()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..cache_remove_url_filter()-mod_file_cache..sendfile_handler(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..add_ignore_session_id()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_ignore_session_id()-mod_cache..set_cache_store_nostore(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..add_ignore_session_id()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_ignore_session_id()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..add_ignore_session_id()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_ignore_session_id()-mod_cache..add_cache_disable(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..add_ignore_session_id()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..add_ignore_session_id()-mod_cache..cache_remove_url_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_create_request()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,1,1,0,0
+http_core..http_create_request()-mod_cache..set_cache_store_nostore(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+http_core..http_create_request()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_create_request()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..http_create_request()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_create_request()-mod_cache..add_cache_disable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_create_request()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+http_core..http_create_request()-mod_cache..cache_remove_url_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_create_request()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..set_keep_alive_max()-http_core..set_keep_alive_timeout(),,0.75,,Type 2,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+http_core..set_keep_alive_max()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0
+http_core..set_keep_alive_max()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+http_core..set_keep_alive_max()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..set_keep_alive_max()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+http_core..set_keep_alive_max()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,0
+http_core..set_keep_alive_max()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+http_core..set_keep_alive_max()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+http_core..set_keep_alive_max()-mod_cache..add_ignore_session_id(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..set_keep_alive_max()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,1,1,0,0
+http_core..set_keep_alive()-http_core..set_keep_alive_timeout(),,0.75,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,0
+http_core..set_keep_alive()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+http_core..set_keep_alive()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..set_keep_alive()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..set_keep_alive()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..set_keep_alive()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,0
+http_core..set_keep_alive()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+http_core..set_keep_alive()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..set_keep_alive()-mod_cache..add_ignore_session_id(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..set_keep_alive()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,0,0
+http_core..set_keep_alive()-http_core..set_keep_alive_max(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,0
+mod_file_cache..cachefilemmap()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilemmap()-mod_cache..set_cache_store_nostore(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..cachefilemmap()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilemmap()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..cachefilemmap()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_file_cache..cachefilemmap()-mod_cache..add_cache_disable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..cachefilemmap()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_file_cache..cachefilemmap()-mod_cache..cache_remove_url_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilemmap()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..cachefilemmap()-http_core..http_create_request(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_file_cache..cachefilemmap()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilemmap()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..register_hooks()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..register_hooks()-mod_cache..set_cache_store_nostore(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..register_hooks()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..register_hooks()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..register_hooks()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..register_hooks()-mod_cache..add_cache_disable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..register_hooks()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..register_hooks()-mod_cache..cache_remove_url_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..register_hooks()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..register_hooks()-http_core..http_create_request(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..register_hooks()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..register_hooks()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..register_hooks()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..add_ignore_header()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_ignore_header()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..add_ignore_header()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_ignore_header()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..add_ignore_header()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_ignore_header()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..add_ignore_header()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..add_ignore_header()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_ignore_header()-mod_cache..add_ignore_session_id(),,1,,Type 2,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_cache..add_ignore_header()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_ignore_header()-http_core..set_keep_alive_max(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_ignore_header()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_ignore_header()-mod_file_cache..cachefilemmap(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_cache..add_ignore_header()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_handler()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..file_cache_handler()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..file_cache_handler()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_handler()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_handler()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_handler()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_handler()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_handler()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_handler()-mod_cache..add_ignore_session_id(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_handler()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_handler()-http_core..set_keep_alive_max(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..file_cache_handler()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_handler()-mod_file_cache..cachefilemmap(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_file_cache..file_cache_handler()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_handler()-mod_cache..add_ignore_header(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_port()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+http_core..http_port()-mod_cache..set_cache_store_nostore(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+http_core..http_port()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_port()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..http_port()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_port()-mod_cache..add_cache_disable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_port()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+http_core..http_port()-mod_cache..cache_remove_url_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_port()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_port()-http_core..http_create_request(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_port()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+http_core..http_port()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_port()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_port()-mod_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..http_port()-mod_cache..add_ignore_header(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_port()-mod_file_cache..file_cache_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_post_config()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-mod_cache..set_cache_store_nostore(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-mod_file_cache..mmap_handler(),,,,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-mod_cache..add_cache_disable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-mod_file_cache..sendfile_handler(),,,,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-mod_cache..cache_remove_url_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-http_core..http_create_request(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-mod_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-mod_cache..add_ignore_header(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-mod_file_cache..file_cache_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_post_config()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_factor()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_cache..set_cache_factor()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_factor()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..set_cache_factor()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_factor()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..set_cache_factor()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_factor()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_factor()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..set_cache_factor()-mod_cache..add_ignore_session_id(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_factor()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..set_cache_factor()-http_core..set_keep_alive_max(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_cache..set_cache_factor()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..set_cache_factor()-mod_file_cache..cachefilemmap(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_factor()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_factor()-mod_cache..add_ignore_header(),,0.5,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_factor()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..set_cache_factor()-http_core..http_port(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..set_cache_factor()-mod_file_cache..file_cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_maxex()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_cache..set_cache_maxex()-mod_cache..set_cache_store_nostore(),,0.25,,Type 2,0,0,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_cache..set_cache_maxex()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..set_cache_maxex()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_maxex()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_maxex()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_maxex()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_maxex()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+mod_cache..set_cache_maxex()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_maxex()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_maxex()-http_core..set_keep_alive_max(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_cache..set_cache_maxex()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_maxex()-mod_file_cache..cachefilemmap(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_maxex()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_maxex()-mod_cache..add_ignore_header(),,0.5,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_maxex()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..set_cache_maxex()-http_core..http_port(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_maxex()-mod_file_cache..file_cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_maxex()-mod_cache..set_cache_factor(),,1,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_store_private()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_store_private()-mod_cache..set_cache_store_nostore(),,1,,Type 2,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+mod_cache..set_cache_store_private()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0
+mod_cache..set_cache_store_private()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_store_private()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_cache..set_cache_store_private()-mod_cache..add_cache_disable(),,0.5,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_store_private()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_store_private()-mod_cache..cache_remove_url_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+mod_cache..set_cache_store_private()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_store_private()-http_core..http_create_request(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+mod_cache..set_cache_store_private()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_store_private()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..set_cache_store_private()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_store_private()-mod_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_store_private()-mod_cache..add_ignore_header(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_store_private()-mod_file_cache..file_cache_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+mod_cache..set_cache_store_private()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0
+mod_cache..set_cache_store_private()-mod_file_cache..file_cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_store_private()-mod_cache..set_cache_factor(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_store_private()-mod_cache..set_cache_maxex(),,1,,Type 2,0,0,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_cache..create_cache_config()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..create_cache_config()-mod_cache..set_cache_store_nostore(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..create_cache_config()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..create_cache_config()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..create_cache_config()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..create_cache_config()-mod_cache..add_cache_disable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..create_cache_config()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..create_cache_config()-mod_cache..cache_remove_url_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..create_cache_config()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..create_cache_config()-http_core..http_create_request(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..create_cache_config()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..create_cache_config()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..create_cache_config()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..create_cache_config()-mod_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..create_cache_config()-mod_cache..add_ignore_header(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..create_cache_config()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..create_cache_config()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..create_cache_config()-mod_file_cache..file_cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..create_cache_config()-mod_cache..set_cache_factor(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..create_cache_config()-mod_cache..set_cache_maxex(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..create_cache_config()-mod_cache..set_cache_store_private(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+http_core..ap_process_http_connection()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,1,1,0,0
+http_core..ap_process_http_connection()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+http_core..ap_process_http_connection()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..ap_process_http_connection()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..ap_process_http_connection()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..ap_process_http_connection()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..ap_process_http_connection()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+http_core..ap_process_http_connection()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..ap_process_http_connection()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..ap_process_http_connection()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,0,0
+http_core..ap_process_http_connection()-http_core..set_keep_alive_max(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,1,1,0,0
+http_core..ap_process_http_connection()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,1,1,1,0,0
+http_core..ap_process_http_connection()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+http_core..ap_process_http_connection()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..ap_process_http_connection()-mod_cache..add_ignore_header(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..ap_process_http_connection()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..ap_process_http_connection()-http_core..http_port(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..ap_process_http_connection()-mod_file_cache..file_cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..ap_process_http_connection()-mod_cache..set_cache_factor(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..ap_process_http_connection()-mod_cache..set_cache_maxex(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+http_core..ap_process_http_connection()-mod_cache..set_cache_store_private(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+http_core..ap_process_http_connection()-mod_cache..create_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_scheme()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_scheme()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+http_core..http_scheme()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+http_core..http_scheme()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..http_scheme()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+http_core..http_scheme()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_scheme()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+http_core..http_scheme()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0
+http_core..http_scheme()-mod_cache..add_ignore_session_id(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+http_core..http_scheme()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+http_core..http_scheme()-http_core..set_keep_alive_max(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_scheme()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+http_core..http_scheme()-mod_file_cache..cachefilemmap(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_scheme()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..http_scheme()-mod_cache..add_ignore_header(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+http_core..http_scheme()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+http_core..http_scheme()-http_core..http_port(),,0,,Type 2,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,1
+http_core..http_scheme()-mod_file_cache..file_cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..http_scheme()-mod_cache..set_cache_factor(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+http_core..http_scheme()-mod_cache..set_cache_maxex(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+http_core..http_scheme()-mod_cache..set_cache_store_private(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0
+http_core..http_scheme()-mod_cache..create_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+http_core..http_scheme()-http_core..ap_process_http_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+mod_file_cache..register_hooks()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_file_cache..register_hooks()-mod_cache..set_cache_store_nostore(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..register_hooks()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..register_hooks()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..register_hooks()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..register_hooks()-mod_cache..add_cache_disable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..register_hooks()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..register_hooks()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..register_hooks()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..register_hooks()-http_core..http_create_request(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..register_hooks()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_file_cache..register_hooks()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..register_hooks()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_file_cache..register_hooks()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..register_hooks()-mod_cache..add_ignore_header(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..register_hooks()-mod_file_cache..file_cache_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..register_hooks()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..register_hooks()-mod_file_cache..file_cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..register_hooks()-mod_cache..set_cache_factor(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0
+mod_file_cache..register_hooks()-mod_cache..set_cache_maxex(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..register_hooks()-mod_cache..set_cache_store_private(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0
+mod_file_cache..register_hooks()-mod_cache..create_cache_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_file_cache..register_hooks()-http_core..ap_process_http_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..register_hooks()-http_core..http_scheme(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_cache..set_cache_store_nostore(),,0.25,,Type 2,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+mod_cache..set_cache_ignore_cachecontrol()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_cache..add_cache_disable(),,0.75,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_cache..cache_remove_url_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-http_core..http_create_request(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_cache..add_ignore_header(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_file_cache..file_cache_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_file_cache..file_cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_cache..set_cache_factor(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_cache..set_cache_maxex(),,0.75,,,0,0,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_cache..set_cache_ignore_cachecontrol()-mod_cache..set_cache_store_private(),,,,Type 2,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+mod_cache..set_cache_ignore_cachecontrol()-mod_cache..create_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-http_core..ap_process_http_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-http_core..http_scheme(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_cachecontrol()-mod_file_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..cache_save_filter()-mod_cache..set_cache_store_nostore(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_save_filter()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-mod_cache..add_cache_disable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-mod_cache..cache_remove_url_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-http_core..http_create_request(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..cache_save_filter()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-mod_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_save_filter()-mod_cache..add_ignore_header(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-mod_file_cache..file_cache_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-mod_file_cache..file_cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_save_filter()-mod_cache..set_cache_factor(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-mod_cache..set_cache_maxex(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-mod_cache..set_cache_store_private(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..cache_save_filter()-mod_cache..create_cache_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..cache_save_filter()-http_core..ap_process_http_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-http_core..http_scheme(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-mod_file_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_save_filter()-mod_cache..set_cache_ignore_cachecontrol(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_post_config()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_post_config()-mod_cache..set_cache_store_nostore(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_post_config()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_post_config()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_post_config()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_post_config()-mod_cache..add_cache_disable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_post_config()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_post_config()-mod_cache..cache_remove_url_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_post_config()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_post_config()-http_core..http_create_request(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_post_config()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_post_config()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_post_config()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_post_config()-mod_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_post_config()-mod_cache..add_ignore_header(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_post_config()-mod_file_cache..file_cache_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_post_config()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_post_config()-mod_file_cache..file_cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_post_config()-mod_cache..set_cache_factor(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_post_config()-mod_cache..set_cache_maxex(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_post_config()-mod_cache..set_cache_store_private(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_post_config()-mod_cache..create_cache_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_post_config()-http_core..ap_process_http_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_post_config()-http_core..http_scheme(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_post_config()-mod_file_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_post_config()-mod_cache..set_cache_ignore_cachecontrol(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_post_config()-mod_cache..cache_save_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_file_cache..create_server_config()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..create_server_config()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_cache..add_ignore_session_id(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-http_core..set_keep_alive_max(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_file_cache..cachefilemmap(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..create_server_config()-mod_cache..add_ignore_header(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-http_core..http_port(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_file_cache..file_cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..create_server_config()-mod_cache..set_cache_factor(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_cache..set_cache_maxex(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_cache..set_cache_store_private(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_cache..create_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_file_cache..create_server_config()-http_core..ap_process_http_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-http_core..http_scheme(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_file_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_cache..set_cache_ignore_cachecontrol(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_cache..cache_save_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..create_server_config()-mod_cache..cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+http_core..http_send_options()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..http_send_options()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_cache..add_ignore_session_id(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-http_core..set_keep_alive_max(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..http_send_options()-mod_cache..add_ignore_header(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_file_cache..file_cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..http_send_options()-mod_cache..set_cache_factor(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_cache..set_cache_maxex(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_cache..set_cache_store_private(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_cache..create_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+http_core..http_send_options()-http_core..ap_process_http_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-http_core..http_scheme(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_file_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_cache..set_cache_ignore_cachecontrol(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_cache..cache_save_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+http_core..http_send_options()-mod_cache..cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+http_core..http_send_options()-mod_file_cache..create_server_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..cache_url_handler()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0
+mod_cache..cache_url_handler()-mod_cache..set_cache_store_nostore(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..cache_url_handler()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..cache_url_handler()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_url_handler()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..cache_url_handler()-mod_cache..add_cache_disable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..cache_url_handler()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..cache_url_handler()-mod_cache..cache_remove_url_filter(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..cache_url_handler()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..cache_url_handler()-http_core..http_create_request(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_cache..cache_url_handler()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0
+mod_cache..cache_url_handler()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..cache_url_handler()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..cache_url_handler()-mod_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_url_handler()-mod_cache..add_ignore_header(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..cache_url_handler()-mod_file_cache..file_cache_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0
+mod_cache..cache_url_handler()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..cache_url_handler()-mod_file_cache..file_cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..cache_url_handler()-mod_cache..set_cache_factor(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_url_handler()-mod_cache..set_cache_maxex(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_url_handler()-mod_cache..set_cache_store_private(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0
+mod_cache..cache_url_handler()-mod_cache..create_cache_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..cache_url_handler()-http_core..ap_process_http_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..cache_url_handler()-http_core..http_scheme(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_url_handler()-mod_file_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..cache_url_handler()-mod_cache..set_cache_ignore_cachecontrol(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..cache_url_handler()-mod_cache..cache_save_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..cache_url_handler()-mod_cache..cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..cache_url_handler()-mod_file_cache..create_server_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..cache_url_handler()-http_core..http_send_options(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..add_cache_enable()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..add_cache_enable()-mod_cache..set_cache_store_nostore(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,1,0,1,1,0,0
+mod_cache..add_cache_enable()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..add_cache_enable()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-mod_cache..add_cache_disable(),,0.25,,No Clone,0,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_cache..add_cache_enable()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..add_cache_enable()-mod_cache..cache_remove_url_filter(),,,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-mod_cache..add_ignore_session_id(),,0.25,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-http_core..http_create_request(),,,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..add_cache_enable()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-mod_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..add_cache_enable()-mod_cache..add_ignore_header(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-mod_file_cache..file_cache_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-mod_file_cache..file_cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..add_cache_enable()-mod_cache..set_cache_factor(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-mod_cache..set_cache_maxex(),,0.5,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-mod_cache..set_cache_store_private(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,1,1,0,0
+mod_cache..add_cache_enable()-mod_cache..create_cache_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..add_cache_enable()-http_core..ap_process_http_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-http_core..http_scheme(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_cache..add_cache_enable()-mod_file_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_cache..add_cache_enable()-mod_cache..set_cache_ignore_cachecontrol(),,0.5,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,1,1,0,0
+mod_cache..add_cache_enable()-mod_cache..cache_save_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..add_cache_enable()-mod_cache..cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..add_cache_enable()-mod_file_cache..create_server_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..add_cache_enable()-http_core..http_send_options(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..add_cache_enable()-mod_cache..cache_url_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..cachefilehandle()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..cachefilehandle()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_cache..add_ignore_session_id(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-http_core..set_keep_alive_max(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_file_cache..cachefilehandle()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_file_cache..cachefilemmap(),,1,,Type 2,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_file_cache..cachefilehandle()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..cachefilehandle()-mod_cache..add_ignore_header(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-http_core..http_port(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_file_cache..file_cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..cachefilehandle()-mod_cache..set_cache_factor(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_cache..set_cache_maxex(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_cache..set_cache_store_private(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_cache..create_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_file_cache..cachefilehandle()-http_core..ap_process_http_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-http_core..http_scheme(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_file_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_cache..set_cache_ignore_cachecontrol(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_cache..cache_save_filter(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_cache..cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_file_cache..cachefilehandle()-mod_file_cache..create_server_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..cachefilehandle()-http_core..http_send_options(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_file_cache..cachefilehandle()-mod_cache..cache_url_handler(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..cachefilehandle()-mod_cache..add_cache_enable(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..set_cache_store_nostore(),,0.25,,Type 2,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+mod_cache..set_cache_ignore_no_last_mod()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..add_ignore_session_id(),,0.75,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-http_core..set_keep_alive_max(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_file_cache..cachefilemmap(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..add_ignore_header(),,0.5,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-http_core..http_port(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_file_cache..file_cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..set_cache_factor(),,0.75,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..set_cache_maxex(),,,,,0,0,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..set_cache_store_private(),,0.75,,Type 2,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..create_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-http_core..ap_process_http_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-http_core..http_scheme(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_file_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..set_cache_ignore_cachecontrol(),,0.25,,Type 2,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..cache_save_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_file_cache..create_server_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-http_core..http_send_options(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..cache_url_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_cache..add_cache_enable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_no_last_mod()-mod_file_cache..cachefilehandle(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,1,0,0
+mod_file_cache..file_cache_xlat()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,0
+mod_file_cache..file_cache_xlat()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_xlat()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..add_ignore_session_id(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-http_core..set_keep_alive_max(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..file_cache_xlat()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_file_cache..cachefilemmap(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..add_ignore_header(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-http_core..http_port(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_file_cache..file_cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..set_cache_factor(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..set_cache_maxex(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..set_cache_store_private(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..create_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_file_cache..file_cache_xlat()-http_core..ap_process_http_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-http_core..http_scheme(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_file_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..set_cache_ignore_cachecontrol(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..cache_save_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..file_cache_xlat()-mod_file_cache..create_server_config(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_file_cache..file_cache_xlat()-http_core..http_send_options(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..cache_url_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..add_cache_enable(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_file_cache..cachefilehandle(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0
+mod_file_cache..file_cache_xlat()-mod_cache..set_cache_ignore_no_last_mod(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..set_cache_store_nostore(),,0.25,,Type 2,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+mod_cache..set_cache_ignore_querystring()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_ignore_querystring()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..add_ignore_session_id(),,0.5,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-http_core..set_keep_alive_max(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,0,1,0,0
+mod_cache..set_cache_ignore_querystring()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_file_cache..cachefilemmap(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..add_ignore_header(),,0.75,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-http_core..http_port(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_file_cache..file_cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..set_cache_factor(),,0.75,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..set_cache_maxex(),,0.25,,No Clone,0,0,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_cache..set_cache_ignore_querystring()-mod_cache..set_cache_store_private(),,1,,Type 2,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+mod_cache..set_cache_ignore_querystring()-mod_cache..create_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..set_cache_ignore_querystring()-http_core..ap_process_http_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-http_core..http_scheme(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_file_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..set_cache_ignore_cachecontrol(),,0.25,,Type 2,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+mod_cache..set_cache_ignore_querystring()-mod_cache..cache_save_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_ignore_querystring()-mod_file_cache..create_server_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-http_core..http_send_options(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..cache_url_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..add_cache_enable(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_file_cache..cachefilehandle(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_ignore_querystring()-mod_cache..set_cache_ignore_no_last_mod(),,0.25,,Type 2,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+mod_cache..set_cache_ignore_querystring()-mod_file_cache..file_cache_xlat(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,1,0,0
+http_core..register_hooks()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..set_cache_store_nostore(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..add_cache_disable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..cache_remove_url_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-http_core..http_create_request(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..add_ignore_header(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_file_cache..file_cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..set_cache_factor(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..set_cache_maxex(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..set_cache_store_private(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..create_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-http_core..ap_process_http_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-http_core..http_scheme(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_file_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..set_cache_ignore_cachecontrol(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..cache_save_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_file_cache..create_server_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-http_core..http_send_options(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..cache_url_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..add_cache_enable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_file_cache..cachefilehandle(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..set_cache_ignore_no_last_mod(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_file_cache..file_cache_xlat(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+http_core..register_hooks()-mod_cache..set_cache_ignore_querystring(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..merge_cache_config()-http_core..set_keep_alive_timeout(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_cache..set_cache_store_nostore(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-http_core..ap_process_http_async_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..merge_cache_config()-mod_cache..cache_out_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..merge_cache_config()-mod_file_cache..mmap_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_cache..add_cache_disable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..merge_cache_config()-mod_file_cache..sendfile_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_cache..cache_remove_url_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..merge_cache_config()-mod_cache..add_ignore_session_id(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..merge_cache_config()-http_core..http_create_request(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..merge_cache_config()-http_core..set_keep_alive_max(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-http_core..set_keep_alive(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_file_cache..cachefilemmap(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..merge_cache_config()-mod_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..merge_cache_config()-mod_cache..add_ignore_header(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..merge_cache_config()-mod_file_cache..file_cache_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..merge_cache_config()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_file_cache..file_cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..merge_cache_config()-mod_cache..set_cache_factor(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_cache..set_cache_maxex(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_cache..set_cache_store_private(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_cache..create_cache_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-http_core..ap_process_http_connection(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..merge_cache_config()-http_core..http_scheme(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_file_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_cache..set_cache_ignore_cachecontrol(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_cache..cache_save_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_cache..cache_post_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_file_cache..create_server_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-http_core..http_send_options(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_cache..cache_url_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..merge_cache_config()-mod_cache..add_cache_enable(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..merge_cache_config()-mod_file_cache..cachefilehandle(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_cache..set_cache_ignore_no_last_mod(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_file_cache..file_cache_xlat(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-mod_cache..set_cache_ignore_querystring(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..merge_cache_config()-http_core..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_defex()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_cache..set_cache_defex()-mod_cache..set_cache_store_nostore(),,,,,0,0,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_cache..set_cache_defex()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_defex()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_defex()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_defex()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_defex()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_cache..set_cache_defex()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_cache..set_cache_defex()-mod_cache..add_ignore_session_id(),,0.5,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_defex()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_defex()-http_core..set_keep_alive_max(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,0,0
+mod_cache..set_cache_defex()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_defex()-mod_file_cache..cachefilemmap(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_defex()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_defex()-mod_cache..add_ignore_header(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_defex()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_defex()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_defex()-mod_file_cache..file_cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_defex()-mod_cache..set_cache_factor(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_defex()-mod_cache..set_cache_maxex(),,0.25,,Type 2,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+mod_cache..set_cache_defex()-mod_cache..set_cache_store_private(),,,,,0,0,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_cache..set_cache_defex()-mod_cache..create_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..set_cache_defex()-http_core..ap_process_http_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_defex()-http_core..http_scheme(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_defex()-mod_file_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_defex()-mod_cache..set_cache_ignore_cachecontrol(),,,,,0,0,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_cache..set_cache_defex()-mod_cache..cache_save_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_cache..set_cache_defex()-mod_cache..cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+mod_cache..set_cache_defex()-mod_file_cache..create_server_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_defex()-http_core..http_send_options(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_cache..set_cache_defex()-mod_cache..cache_url_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_defex()-mod_cache..add_cache_enable(),,,,,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,1,1,1,1,1,0,0
+mod_cache..set_cache_defex()-mod_file_cache..cachefilehandle(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0
+mod_cache..set_cache_defex()-mod_cache..set_cache_ignore_no_last_mod(),,,,,0,0,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_cache..set_cache_defex()-mod_file_cache..file_cache_xlat(),,0.25,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0
+mod_cache..set_cache_defex()-mod_cache..set_cache_ignore_querystring(),,,,,0,0,1,0,0,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,0,1
+mod_cache..set_cache_defex()-http_core..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_cache..set_cache_defex()-mod_cache..merge_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_file_cache..cache_the_file()-http_core..set_keep_alive_timeout(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..set_cache_store_nostore(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-http_core..ap_process_http_async_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..cache_out_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..cache_the_file()-mod_file_cache..mmap_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..add_cache_disable(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_file_cache..sendfile_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..cache_remove_url_filter(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..add_ignore_session_id(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-http_core..http_create_request(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-http_core..set_keep_alive_max(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-http_core..set_keep_alive(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_file_cache..cachefilemmap(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..register_hooks(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..cache_the_file()-mod_cache..add_ignore_header(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_file_cache..file_cache_handler(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-http_core..http_port(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_file_cache..file_cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..cache_the_file()-mod_cache..set_cache_factor(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..set_cache_maxex(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..set_cache_store_private(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..create_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_file_cache..cache_the_file()-http_core..ap_process_http_connection(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-http_core..http_scheme(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0
+mod_file_cache..cache_the_file()-mod_file_cache..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..set_cache_ignore_cachecontrol(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..cache_save_filter(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..cache_post_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..cache_the_file()-mod_file_cache..create_server_config(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..cache_the_file()-http_core..http_send_options(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..cache_url_handler(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..add_cache_enable(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_file_cache..cachefilehandle(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..set_cache_ignore_no_last_mod(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_file_cache..file_cache_xlat(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..set_cache_ignore_querystring(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0
+mod_file_cache..cache_the_file()-http_core..register_hooks(),,0,,No Clone,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+mod_file_cache..cache_the_file()-mod_cache..merge_cache_config(),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+mod_file_cache..cache_the_file()-mod_cache..set_cache_defex(),,0.25,,Not Classified,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,1,0,0
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Total Clones,,23,,18,1,5,28,2,14,14,14,14,26,16,26,107,44,99,406,117,303,578,302,488,613,18,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,Expert,,23,,,,,,,,,,,,,,,,,,,,,
+,,,Type 1,0,,,,,,,,,,,,,,,,,,,,,,,
+,,,Type 2,18,,,,,,,,,,,,,,,,,,,,,,,
+,,,Type 3,0,,,,,,,,,,,,,,,,,,,,,,,
+,,,Type 4,0,,,,,,,,,,,,,,,,,,,,,,,
+,,,Total Clones,18,,,,,,,,,,,,,,,,,,,,,,,
+,,,Not Clone,339,,,,,,,,,,,,,,,,,,,,,,,
+,,,Total,357,,,,,,,,,,,,,,,,,,,,,,,
+,,Student,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,Clones,23,,,,,,,,,,,,,,,,,,,,,,,
+,,,Not Clone,334,,,,,,,,,,,,,,,,,,,,,,,
+,,,Total,357,,,,,,,,,,,,,,,,,,,,,,,
