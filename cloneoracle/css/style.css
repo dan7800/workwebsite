@@ -64,7 +64,7 @@ text-decoration: none;
 
 #content { background: #fff; padding: 10px 20px;}
 #content h2 { padding-top: 10px; font-weight: normal; font-size: 30px; color: #383838; }
-#content h3 { font-weight: normal; font-size: 21px; background: #fff88e; padding: 10px; color: red; }
+#content h3 { font-weight: normal; font-size: 21px; padding: 10px; color: #880000; }
 
 #footer { 
 background: #353535;
@@ -94,6 +94,26 @@ tr.d1 td {
 
 tr.d2 td {
 	background-color: #B8B8B8; color: black;
+}
+
+
+
+table
+{
+border-collapse:collapse;
+}
+table, th, td
+{
+border: 1px solid black;
+padding: 4px;
+}
+
+th
+{
+	font-family: Georgia, serif;
+	background-color:#880000;
+	color:white;
+	font-size: 13px;
 }
 
 
