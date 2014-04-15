@@ -91,6 +91,11 @@ text-align: center;
 .clear { clear: both; }
 
 
+#subfooter{
+	margin-left: 0%;
+
+}
+
 
 pre { font: 100% courier,monospace; border: 1px solid #ccc; overflow: auto; overflow-x: scroll; width: 90%; padding: 0 1em 1em 1em; margin: 1em auto 2em auto; background: #fff7f0; color: #000 }
 code { font-size: 120% }
