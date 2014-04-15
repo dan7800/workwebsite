@@ -1,179 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<link rel="stylesheet" type="text/css" href="css/style.css"><title>Code Clone Oracle1</title>
 
-    <title>Code Clone Oracle</title>
-
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="js/google-analytics.js"></script>
-   
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-<!--
-    <link href="jumbotron.css" rel="stylesheet">
-  -->
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-
-<script type="text/javascript">
-
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-43066093-1', 'rit.edu');
+ga('send', 'pageview');
+</script>
+<script>
 function getURL(sParam){
-  var sPageURL = window.location.search.substring(1);
-  var sURLVariables = sPageURL.split('&');
-  for (var i = 0; i < sURLVariables.length; i++) {
-    var sParameterName = sURLVariables[i].split('=');
-      if (sParameterName[0] == sParam) {
-        return sParameterName[1];
-      }
-    }
+var sPageURL = window.location.search.substring(1);
+var sURLVariables = sPageURL.split('&');
+for (var i = 0; i < sURLVariables.length; i++) {
+var sParameterName = sURLVariables[i].split('=');
+if (sParameterName[0] == sParam) {
+return sParameterName[1];
 }
-
+}
+}
 function loadPageData(strPageName){
-  switch(strPageName){
-
-  case "data":
-    $(document).ready(function(){
-    $('#bodyContent').load("pages/data.html"); });
-    break;
-
-  case "downloads":
-    $(document).ready(function(){
-    $('#bodyContent').load("pages/downloads.html"); });
-    break;
-
- case "publications":
-    $(document).ready(function(){
-    $('#bodyContent').load("pages/publications.html"); });
-    break;
-
-
-  case "clones":
-    $(document).ready(function(){
-    $('#bodyContent').load("pages/clones.html"); });
-    break;
-
-  case "contribute":
-    $(document).ready(function(){
-    $('#bodyContent').load("pages/contribute.html"); });
-    break;
-
-  case "cloneinspection":
-    $(document).ready(function(){
-    $('#bodyContent').load("pages/cloneinspection.html"); });
-    break;
-
-  case "publications":
-    $(document).ready(function(){
-    $('#bodyContent').load("pages/publications.html"); });
-    break;
-
-  case "research":
-    $(document).ready(function(){
-    $('#bodyContent').load("pages/research.html"); });
-    break;
-
-  default:
-    $(document).ready(function(){
-    $('#bodyContent').load("pages/main.html"); });
-//    document.getElementById("link1").className = "active";
-//$( "link1" ).addClass( "nav active" );
-
-//alert(document.getElementById('menu_selected').innerHTML);
-
-
-//    alert("hi");
-  }
-
+switch(strPageName){
+case "data":
+$(document).ready(function(){
+$('#content').load("pages/data.html"); });
+break;
+case "downloads":
+$(document).ready(function(){
+$('#content').load("pages/downloads.html"); });
+break;
+case "clones":
+$(document).ready(function(){
+$('#content').load("pages/clones.html"); });
+break;
+case "contribute":
+$(document).ready(function(){
+$('#content').load("pages/contribute.html"); });
+break;
+case "cloneinspection":
+$(document).ready(function(){
+$('#content').load("pages/cloneinspection.html"); });
+break;
+case "publications":
+$(document).ready(function(){
+$('#content').load("pages/publications.html"); });
+break;
+case "research":
+$(document).ready(function(){
+$('#content').load("pages/research.html"); });
+break;
+default:
+$(document).ready(function(){
+$('#content').load("pages/main.html"); });
 }
-
+}
 </script>
+</head>
 
 
-
-
-
-
-
-
-
-  </head>
-
-  <body>
-
-
-    <script>
-
+<body>
+<script>
 loadPageData(getURL("page"));
-
 </script>
-
-
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-         
-          <a class="navbar-brand" href="index.html">Home</a>
-          <a class="navbar-brand" href="index.html?page=data">Data</a>
-          <a class="navbar-brand" href="index.html?page=clones">Clone Examples</a>
-          <a class="navbar-brand" href="index.html?page=cloneinspection">Clone Inspection Tool</a>
-          <a class="navbar-brand" href="index.html?page=publications">Publications</a>
-          <a class="navbar-brand" href="index.html?page=contribute">Contributors</a>
-
-        </div>
-        <div class="navbar-collapse collapse">
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-
- <div id="bodyContent"></div>
-
- 
-      </div>
-    </div>
-
-
-<!--
-    <div class="container">
-      <footer>
-       <p>Project Info - Footer</p>
-      </footer>
-    </div> 
-
-  -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+<div id="wrap">
+<div id="header">
+<h1>Code Clone Oracle</h1>
+<!--<h2>RIT Software Engineering Department</h2>-->
+<!--<h2></h2>-->
+</div>
+<div id="menu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html?page=data">Data</a></li>
+<li><a href="index.html?page=clones">Clone Examples</a></li>
+<li><a href="index.html?page=cloneinspection">CloneInspection Tool</a></li>
+<li><a href="index.html?page=contribute">Contributors</a></li>
+</ul>
+</div>
+<div id="mainPage">
+<div id="content"></div>
+</div>
+<div id="footer">
+<div class="left"></div>
+<div class="right"> </div>
+<div class="clear"> </div>
+</div>
+</div>
+</body></html>
