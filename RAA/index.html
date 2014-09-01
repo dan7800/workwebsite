@@ -4,7 +4,7 @@
 <head>
 
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<title>CCCD: Concolic Code Clone Detection</title>
+<title>Repackaged Android Applications</title>
 
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
@@ -46,28 +46,28 @@ function loadPageData(strPageName){
   				$('#content').load("pages/contribute.html"); 
   			});
   		break;
-	case "install":
+	case "github":
  			$(document).ready(function(){
-  				$('#content').load("pages/install.html"); 
+  				$('#content').load("pages/github.html"); 
   			});
   		break;
  
-  case "results":
+  case "data":
  		$(document).ready(function(){
-  			$('#content').load("pages/results.html"); 
+  			$('#content').load("pages/data.html"); 
   		});
   break;
   
-  case "cloneexamples":
+  case "links":
  		$(document).ready(function(){
-  			$('#content').load("pages/cloneexamples.html"); 
+  			$('#content').load("pages/links.html"); 
   		});
   break;
   
   
-  case "publications":
+  case "study":
  		$(document).ready(function(){
-  			$('#content').load("pages/publications.html"); 
+  			$('#content').load("pages/study.html"); 
   		});
   break;
   
@@ -94,17 +94,22 @@ default:
 <div id="wrap">
 
 <div id="header">
-<h1>CCCD</h1>
-<h2>Concolic Code Clone Detection</h2>
+<h1>Repackaged Android Applications</h1>
+<!--<h2>RIT Software Engineering Department</h2>-->
+<!--<h2></h2>-->
 </div>
 
 <div id="menu">
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a href="index.html?page=results">CCCD Results</a></li>
+<li><a href="index.html?page=data">Data</a></li>
+<li><a href="index.html?page=study">Our Study</a></li>
+<li><a href="index.html?page=links">Helpful Links</a></li>
+<!--
 <li><a href="index.html?page=install">Install</a></li>
 <li><a href="index.html?page=cloneexamples">Examples of Clones</a></li>
 <li><a href="index.html?page=publications">Publications</a></li>
+-->
 <li><a href="index.html?page=contributors">Contributors</a></li>
 
 </ul>
