@@ -4,7 +4,7 @@
 <head>
 
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<title>CTA: Concolic Threat Analysis</title>
+<title>CAA: Concolic Analysis for Android</title>
 
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
@@ -14,11 +14,10 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-54280878-1', 'auto');
+  ga('create', 'UA-57861370-1', 'auto');
   ga('send', 'pageview');
 
 </script>
-
 
 
 <script>
@@ -46,31 +45,32 @@ function loadPageData(strPageName){
   				$('#content').load("pages/contribute.html"); 
   			});
   		break;
-	case "github":
+	case "tool":
  			$(document).ready(function(){
-  				$('#content').load("pages/github.html"); 
+  				$('#content').load("pages/tool.html"); 
   			});
   		break;
  
-  case "data":
+ /*
+  case "results":
  		$(document).ready(function(){
-  			$('#content').load("pages/data.html"); 
+  			$('#content').load("pages/results.html"); 
   		});
   break;
   
-  case "links":
+  case "cloneexamples":
  		$(document).ready(function(){
-  			$('#content').load("pages/links.html"); 
+  			$('#content').load("pages/cloneexamples.html"); 
   		});
   break;
   
   
-  case "study":
+  case "publications":
  		$(document).ready(function(){
-  			$('#content').load("pages/study.html"); 
+  			$('#content').load("pages/publications.html"); 
   		});
   break;
-  
+  */
   
 default:
  	$(document).ready(function(){
@@ -94,23 +94,21 @@ default:
 <div id="wrap">
 
 <div id="header">
-<!--<h1>CTA</h1>-->
-<!--<h2>RIT Software Engineering Department</h2>-->
-<!--<h2>Concolic Threat Analysis</h2>-->
-<h1>Concolic Threat Analysis</h1>
+<h1>CAA</h1>
+<h2>Concolic Analysis for Android</h2>
 </div>
 
 <div id="menu">
 <ul>
 <li><a href="index.html">Home</a></li>
-<li><a href="index.html?page=data">Data</a></li>
-<li><a href="index.html?page=study">Our Study</a></li>
-<li><a href="index.html?page=links">Helpful Links</a></li>
+<li><a href="index.html?page=tool">Tool</a></li>
+
 <!--
+<li><a href="index.html?page=results">CCCD Results</a></li>
 <li><a href="index.html?page=install">Install</a></li>
 <li><a href="index.html?page=cloneexamples">Examples of Clones</a></li>
-<li><a href="index.html?page=publications">Publications</a></li>
 -->
+<!--<li><a href="index.html?page=publications">Publications</a></li>-->
 <li><a href="index.html?page=contributors">Contributors</a></li>
 
 </ul>

@@ -18,18 +18,16 @@ max-width: 800px;
 }
 
 #header {
-height: 140px;
+height: 200px;
 }
 #header h1 {
-padding: 0px 0 0 0;
-margin: 10;
+padding: 35px 0 0 0;
+margin: 0;
 font-weight: normal;
 color: #3e3e3e;
-font-size: 50px;
-line-height: 110px;
+font-size: 70px;
+line-height: 90px;
 }
-
-/*
 #header h2 {
 padding: 0; 
 margin: 0;
@@ -37,7 +35,6 @@ font-weight: normal;
 color: #3f3f3f;
 font-size: 33px;
 }
-*/
 
 #menu {
 background: #880000;
@@ -54,7 +51,7 @@ list-style-type: none;
 }
 #menu ul li {
 display: inline; 
-padding: 0 25px;
+padding: 0 10px;
 }
 #menu ul li a {
 text-decoration: none;
@@ -67,15 +64,7 @@ text-decoration: none;
 
 #content { background: #fff; padding: 10px 20px;}
 #content h2 { padding-top: 10px; font-weight: normal; font-size: 30px; color: #383838; }
-#content h3 { font-weight: normal; font-size: 21px; color: #880000; }
-#content h4 { 
-	font-weight: normal; 
-	font-size: 18px; 
-	padding: 0px 0px 0px 2px; 
-	color: #383838  ; 
-	margin-bottom:3px; 
-	margin-top: 30px; 
-}
+#content h3 { font-weight: normal; font-size: 21px; background: #fff88e; padding: 10px; color: red; }
 
 #footer { 
 background: #353535;
@@ -91,45 +80,8 @@ text-align: center;
 .clear { clear: both; }
 
 
-#subfooter{
-	margin-left: 0%;
-
-}
-
 
 pre { font: 100% courier,monospace; border: 1px solid #ccc; overflow: auto; overflow-x: scroll; width: 90%; padding: 0 1em 1em 1em; margin: 1em auto 2em auto; background: #fff7f0; color: #000 }
 code { font-size: 120% }
-
-
-tr.d0 td {
-	background-color: #606060  ; color: black;
-}
-tr.d1 td {
-	background-color: white; color: black;
-}
-
-tr.d2 td {
-	background-color: #B8B8B8; color: black;
-}
-
-
-
-table
-{
-border-collapse:collapse;
-}
-table, th, td
-{
-border: 1px solid black;
-padding: 4px;
-}
-
-th
-{
-	font-family: Georgia, serif;
-	background-color:#880000;
-	color:white;
-	font-size: 13px;
-}
 
 
