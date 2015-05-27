@@ -1,3 +1,4 @@
 ### Instructions for updating the website on Androsec
 
-# 
+# Create folder/static files in: 
+/home/darwin/ProjectKrutz/website/public/caa
