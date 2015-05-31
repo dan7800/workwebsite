@@ -9,5 +9,109 @@ Please use <a href="https://github.com/ConcolicAnalysisAndroid/ConcolicAnalysisF
 
 The source code and all necessary documentation may be fond on the project's <a href="https://github.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/" target="_blank">GitHub</a> page.
 
-</p>
 
+<h1 id="concolic-analysis-for-android-caa">Concolic Analysis for Android (CAA)</h1>
+<h2 id="description">Description</h2>
+<p>The goal of this project is to provide a tool to allow concolic analysis of arbitrary black box Android APKs. The long term intention is for the analysis of APKs in order to detect malicious clones, but the tool stands on its own.</p>
+<h2 id="general-setup">General setup:</h2>
+<ol>
+<li>Set up the VM</li>
+<ol>
+<li>Install Vagrant</li>
+<li>Go to the root directory of the repo (where this file is)</li>
+<li>Run "vagrant up" and wait for the machine to come online</li>
+<li>Run "vagrant ssh" to enter the virtual machine</li>
+</ol>
+<li>All included projects will be in "~/Workspace/" in the VM</li>
+<li>Needed tools should be all installed via puppet or vagrant scripts. No configuration there should be necessary.</li>
+</ol>
+<h2 id="requirements">Requirements</h2>
+<p>Linux or possibly OSX only. <em>Windows is not supported at this time.</em> Hence, you may use a Vagrant virtual machine.</p>
+<h2 id="caa-project-setup">CAA Project Setup:</h2>
+<ol>
+<li>In the VM, navigate to "~/Workspace/AnalysisEngine"</li>
+<li>In the host OS, import "AnalysisEngine/AndroidAnalysisEngine/" as a maven project in the IDE of your choice. If this instruction is insufficient, please see <em>Project Setup in Eclipse</em> below.</li>
+</ol>
+<h2 id="building-the-project">Building the Project:</h2>
+<ol>
+<li>SSH into the vm ("vagrant ssh")</li>
+<li>Run "mvn package" in "AnalysisEngine/AndroidAnalysisEngine/"</li>
+<li>The jar and several folders will be created under "AnalysisEngine/AndroidAnalysisEngine/target/"</li>
+<ol>
+<li>Relevant folders to project: "configs/," "lib/," and "spawnsource/"</li>
+</ol>
+<li>Update "configs/config.properties" with the locations of the three tools (Java Pathfinder, ApkTools, and Dex2Jar). Locations should be to the containing directories and end in a slash (this one -&gt; "/") See <em>Helpful Notes</em> for default tool locations</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<ol>
+<li>Navigate to the app directory</li>
+<li>Run "java -jar $JARNAME -apk $PATH_TO_APK</li>
+<ol>
+<li>$JARNAME at this time is "CAA-1.0.0.jar"</li>
+<li>$PATH_TO_APK may include anywhere on the system running the app</li>
+</ol>
+<li>Wait a while (coffee time!)</li>
+<li>Once the app in finished, the results will be under "results" in the same directory, named "$APK_FILENAME.jpfout.txt"</li>
+</ol>
+<ul>
+<li>A good small test APK may be found <a href="https://github.com/stephanenicolas/RoboDemo/robodemo-sample-1.0.1.apk/qr_code">here</a>.</li>
+</ul>
+<h2 id="helpful-notes">Helpful Notes</h2>
+<ul>
+<li>All the tools are installed in "AnalysisEngine/tools/"</li>
+<li>Sometimes the app dislikes running from the target directory. In this case, move the created jar and directories up one level (to AnalysisEngine/AndroidAnalysisEngine/). This frequently helps. Make sure to check configs for correctness after.</li>
+<li>MAKE SURE YOU HAVE A JDK INSTALLED AND ON YOUR PATH</li>
+<ol>
+<li>This only should be an issue for running on local machines - the VM should have an appropriate JDK installed and configured</li>
+<li>Requires at least 1.7</li>
+<li>Please make sure your default JRE and default JRE are the same major version in the event of a major/minor conflict,</li>
+</ol>
+<li>Java Pathfinder requires some special setup, especially the site.properties - the VM setup takes care of this, but for local development this should become necessary. Instructions can be found <a href="http://babelfish.arc.nasa.gov/trac/jpf/wiki/install/site-properties">here</a>. Both the <em>core</em> and <em>symbolic</em> modules are <em>required</em>.</li>
+
+</ul>
+<h2 id="notable-tools-used">Notable Tools Used</h2>
+<ul>
+<li><a href="https://developer.android.com/index.html">Android</a></li>
+<li><a href="http://babelfish.arc.nasa.gov/trac/jpf">Java Pathfinder</a></li>
+<li><a href="https://code.google.com/p/android-apktool/">ApkTools</a></li>
+<li><a href="https://code.google.com/p/dex2jar/">Dex2Jar</a></li>
+<li><a href="http://robolectric.org/">Robolectric</a></li>
+</ul>
+
+
+<h2 id="project-setup-in-eclipse">Project Setup in Eclipse</h2>
+<p>Development of the project is recommend to be done outside the provided Vagrant machine. At this time, ONLY Unix-like systems are supported (OSX and CentOS Linux are tested - BSD flavors and Haiku are not). If you do not have a Unix-like system available, uncomment the line <code>config.vm.boot\_mode = :gui</code> in the Vagrantfile and install Eclipse inside the VM. This is not recommended, but should be adequate enough. Be careful, because destroying the virtual machine means losing your Eclipse install.</p>
+<h2 id="steps-for-setup">Steps for setup</h2>
+<ol>
+<li>Clone this project locally</li>
+<li>Download and install the latest version of <a href="https://www.eclipse.org/downloads/">Eclipse</a> for Java if you don't have a version already</li>
+<li>Launch Eclipse. You should see a window like the following: <img src="https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/docs/images/Workspace.png" alt="Workspace" /></li>
+<li>Click "Browse" and set your workspace to $LOCAL_REPO/AnalysisEngine, where $LOCAL_REPO is where this repo was cloned to. Click "Open" and then "Okay"</li>
+<br />
+<li>You should see the following: <br /><img src="https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/docs/images/Welcome.png" alt="Welcome" /></li>
+<li>On the top menu bar, select "File" -&gt; "Import" This screenshot shows OSX, but the flow is the same for other OS's <img src="https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/docs/images/TopImport.png" alt="Import" /></li>
+<li>On the window that pops up, select "Maven" -&gt; "Existing Maven Projects" <img src="https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/docs/images/ImportSelect.png" alt="Maven Select" /></li>
+<li>You should see the following: <br /> <img src="https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/docs/images/ImportBrowse.png" alt="Import Browse" /></li>
+<li>On the next window, select "Browse" in the top right, select the $LOCAL_REPO/AnalysisEngine directory (should be the default) and click "Okay." After a scan, you should see something like the following <br /><img src="https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/docs/images/ImportBrowsed.png" alt="Import Browsed" /></li>
+<li>Eclipse should now have the project open, similar to this <img src="https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/docs/images/OpenProject.png" alt="Loaded" /></li>
+</ol>
+<h2 id="running-the-project-inside-eclipse-during-development">Running the project inside Eclipse during development</h2>
+<ol>
+<li>Before going any further, make sure you have run through the <em>General Setup</em> part of this guide. The virtual machine does not need to stay running while developing, but several tools are downloaded during the initial setup</li>
+
+<li>If you're running Eclipse inside the Vagrant VM, skip this step. Otherwise, copy the file "site.properties" from "$LOCAL_REPO/puppet/modules/java-pathfinder/sources" to "~/.jpf" as this is required for Java Pathfinder to run correctly. Make sure to update the following in your copy</li>
+<ol>
+<li>jpf-core = $LOCAL_REPO/AnalysisEngine/tools/jpf/jpf-core, where $LOCAL_REPO is where you cloned the repository</li>
+<li>jpf-symbc = $LOCAL_REPO/AnalysisEngine/tools/jpf/jpf-symbc, where $LOCAL_REPO is where you cloned the repository</li>
+</ol>
+<li>In Eclipse, go to the menu bar and select "Run" -&gt; "Run Configurations" <img src="https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/docs/images/TopConfigurations.png" alt="Top Configurations" /></li>
+<br />
+<li>You should see the following <img src="https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/docs/images/RunConfigurations.png" alt="Run Configurations" /></li>
+<li>Double click "Java Application" and the following should appear <img src="https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/docs/images/RunConfEmpty.png" alt="Run Conf Empty" /></li>
+<li>Give your run configuration a name. The project should be "AndroidAnalysisEngine" and the main class should be "com.rit.AndroidAnalysisEngine.App" <img src="https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/docs/images/RunConfFilled.png" alt="Run Conf Fille" /></li>
+<li>Click the Arguments tab just under the name field. For program arguments, enter without quotes "-apk $AN_APK_FILE" <em>where $AN_APK_FILE is either an absolute path or a path relative to $LOCAL_REPO/AnalysisEngine/AndroidAnalysisEngine</em> where there is an apk<br/>  <img src="https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/docs/images/Arguments.png" alt="Arguments" /></li>
+<li>Click "Apply" and "Close." At this point, you should be able to use the Debug and Play buttons to start the app <img src="https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/https://raw.githubusercontent.com/ConcolicAnalysisAndroid/ConcolicAnalysisForAndroid/master/docs/images/DebugAndPlay.png" alt="Debug and Play" /></li>
+<li>Once one of those button is clicked, you should see output in the Terminal window at the bottom, starting with "Firing up!"</li>
+</ol>
+<h2 id="credits">Credits</h2>
+<p>Original idea from Daniel Krutz. Based in part from research by Justin Peterson</p>
