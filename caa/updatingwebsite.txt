@@ -2,3 +2,7 @@
 
 # Create folder/static files in: 
 /home/darwin/ProjectKrutz/website/public/caa
+
+Mac Info:
+
+/Library/WebServer/Documents/workwebsite
