@@ -1,1 +1,241 @@
-default landing page
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+  <!-- This must be located at the top of the page for the automatic loading of items to work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/acm-cac-logo.png">
+
+    <title>Daniel E. Krutz, PhD</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+
+    <!-- Start Load the specific page info -->
+
+
+
+    <!-- Put at bottom of page? to help load time?-->
+
+<script>
+function getURL(sParam){
+var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}
+
+
+function loadPageData(strPageName){
+  switch(strPageName){
+  case "about":
+        $(document).ready(function(){
+          $('#content').load("pages/about.html"); 
+        });
+      break;
+  case "cv":
+      $(document).ready(function(){
+          $('#content').load("pages/cv.html"); 
+        });
+      break;
+ 
+  case "teaching":
+    $(document).ready(function(){
+        $('#content').load("pages/teaching"); 
+      });
+  break;
+  
+   case "studentadvising":
+    $(document).ready(function(){
+        $('#content').load("pages/studentadvising.html"); 
+      });
+  break;
+
+
+   case "publications":
+    $(document).ready(function(){
+        $('#content').load("pages/publications.html"); 
+      });
+  break;
+
+
+ case "studentadvice":
+    $(document).ready(function(){
+        $('#content').load("pages/studentadvice.html"); 
+      });
+  break;
+
+  
+  
+   case "research":
+    $(document).ready(function(){
+        $('#content').load("pages/research.html"); 
+      });
+  break;
+
+  
+default:
+  $(document).ready(function(){
+      $('#content').load("pages/main.html"); 
+    });
+}
+
+
+
+}
+
+
+</script>
+
+
+
+    <!-- End Load the specific page info -->
+
+
+
+
+
+  </head>
+
+  <body>
+  <script>loadPageData(getURL("page"));</script>
+
+      <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" id="homeNavLink">Dan</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html?page=cv" id="cvNavLink">CV</a></li>
+            <li><a href="index.html?page=publications" id="publicationsNavLink">Publications</a></li>
+            <li><a href="index.html?page=research" id="researchNavLink">Research</a></li>
+            <li><a href="index.html?page=teaching" id="teachingNavLink">Teaching</a></li>
+            <li><a href="index.html?page=studentadvising" id="studentadvisingNavLink">Advising</a></li>
+            <li><a href="index.html?page=studentadvice" id="studentAdvicegNavLink">Student Advice</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+
+<!-- <li class="active"><a href="index.html">Home</a></li>  Show something active-->
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+          
+         
+         <!-- ************************ start main body ************************ -->
+
+
+          <div id="content"></div>
+
+
+         <!-- ************************ End main body ************************ -->
+
+    
+        </div><!--/span-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+               
+        <div class="textwidget">
+
+
+        <h2 class="widget-title">Announcements</h2> 
+
+        <b>SAC Paper Accepted</b>: "Architectural Clones: Toward Tactical Code Reuse" <br /><br />
+
+
+        <!--
+        <b>SAC 2016 Paper Accepted</b>: "Architectural Clones: Toward Tactical Code Reuse" <br />
+        -->
+
+<!--
+
+          <b>April 29, 2016</b><br />
+          <i>Papers submission</i><br />
+          <br />
+
+          <b>June 17, 2016</b><br />
+          <i>Author notification</i><br />
+          <br />
+
+
+
+          <b>July 01, 2016</b><br />
+          <i>Camera-ready papers</i><br />
+          <br />
+          -->
+
+       </aside>
+
+    
+        </div><!--/span-->
+      </div><!--/row-->
+
+<!--
+      <footer>
+        <p>&copy; Dan Krutz</p>
+      </footer>
+-->
+    </div><!--/.container-->
+
+
+ <!-- Start of Google Tracking Info -->
+     <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43066093-1', 'rit.edu');
+  ga('send', 'pageview');
+
+  </script>
+
+    <!-- End of Google Tracking Info -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="offcanvas.js"></script>
+
+
+
+    <!-- End Loading shared items -->
+   
+  </body>
+</html>
