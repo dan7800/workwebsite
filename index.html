@@ -46,27 +46,35 @@ var sPageURL = window.location.search.substring(1);
 
 function loadPageData(strPageName){
   switch(strPageName){
-  case "about":
-        $(document).ready(function(){
-          $('#content').load("pages/about.html"); 
-        });
-      break;
   case "cv":
       $(document).ready(function(){
-          $('#content').load("pages/cv.html"); 
+        $('#content').load("pages/cv.html"); 
+                 $(window).on('load', function(){
+              $('#cvNavLink').addClass('dkActive');
+        })
         });
+
+
       break;
  
   case "teaching":
     $(document).ready(function(){
         $('#content').load("pages/teaching"); 
+                $(window).on('load', function(){
+          $('#teachingNavLink').addClass('dkActive');
+        })
       });
+
   break;
   
    case "studentadvising":
     $(document).ready(function(){
         $('#content').load("pages/studentadvising.html"); 
+              $(window).on('load', function(){
+        $('#studentadvisingNavLink').addClass('dkActive');
+      })
       });
+
   break;
 
 
@@ -74,6 +82,9 @@ function loadPageData(strPageName){
     $(document).ready(function(){
         $('#content').load("pages/publications.html"); 
       });
+      $(window).on('load', function(){
+        $('#publicationsNavLink').addClass('dkActive');
+      })
   break;
 
 
@@ -81,6 +92,9 @@ function loadPageData(strPageName){
     $(document).ready(function(){
         $('#content').load("pages/studentadvice.html"); 
       });
+     $(window).on('load', function(){
+        $('#studentAdvicegNavLink').addClass('dkActive');
+      })
   break;
 
   
@@ -89,6 +103,9 @@ function loadPageData(strPageName){
     $(document).ready(function(){
         $('#content').load("pages/research.html"); 
       });
+     $(window).on('load', function(){
+        $('#researchNavLink').addClass('dkActive');
+      })
   break;
 
   
@@ -96,6 +113,9 @@ default:
   $(document).ready(function(){
       $('#content').load("pages/main.html"); 
     });
+  $(window).on('load', function(){
+        $('#homeNavLink').addClass('dkActive');
+      })
 }
 
 
