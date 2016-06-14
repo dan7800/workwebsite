@@ -1,0 +1,94 @@
+----------------- Source Report ------------------
+Package: com.amazon.avod.thirdpartyclient
+
+----------- Permissions Found in Files -----------
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/identity/auth/accounts/SessionUserChangedToAccountForPackageChangedAdpater.java
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/identity/auth/device/framework/MAPSmsReceiver.java
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/identity/auth/device/metadata/DeviceMetadataCollector.java
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/identity/platform/metric/MetricUtils.java
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/acos/BackgroundApplicationInstanceKiller.java
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/acos/internal/FileSharer.java
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/media/framework/platform/AndroidPlatform.java
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/app/SecureSettingsSyncModule.java
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/graphics/util/ImageDiskUtils.java
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/client/Manifest.java
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/fileio/DiskUtils.java
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/communication/TCommService.java
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/client/metrics/MetricsServicePermissions.java
+sample_apks/amazon.apk.uncompressed//app/src/com/amazon/client/metrics/MetricsBroadcastReceiver.java
+
+------------- Occurrences in Source --------------
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/identity/auth/accounts/SessionUserChangedToAccountForPackageChangedAdpater.java
+
+                MultipleAccountPluginHolder.getMultipleAccountPlugin((Context)create).sendBroadcast((String)null, new Intent("com.amazon.identity.action.ACCOUNT_FOR_PACKAGE_CHANGED"), "com.amazon.dcp.sso.permission.account.changed");
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/identity/auth/device/framework/MAPSmsReceiver.java
+
+            if (context.checkCallingOrSelfPermission("android.permission.RECEIVE_SMS") == 0) {
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/identity/auth/device/metadata/DeviceMetadataCollector.java
+
+            MAPLog.w(DeviceMetadataCollector.TAG, "Cannot read the phone state on this device, mainly because the client app lacks the permission");
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/identity/platform/metric/MetricUtils.java
+
+                MAPLog.e(SSOMetrics.TAG, "We do not have permission to get the network state. Please make sure the permission android.permission.ACCESS_NETWORK_STATE is included in your manifest", ex);
+            MAPLog.e(SSOMetrics.TAG, "We do not have permission to get the network state. Please make sure the permission android.permission.ACCESS_NETWORK_STATE is included in your manifest", ex);
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/acos/BackgroundApplicationInstanceKiller.java
+
+        DLog.dev("Could not call ActivityManager#getCurrentUser or UserHandle#myUserId. If this is a platform that utilizes multiple users, system permissions INTERACT_ACROSS_USERS and MANAGE_USERS must be added to the manifest.");
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/acos/internal/FileSharer.java
+
+        final FileSharer.FileSharer$StructStat permissionsForFileAtPath = getPermissionsForFileAtPath(file.getAbsolutePath());
+        if (permissionsForFileAtPath != null) {
+            if ((n7 & permissionsForFileAtPath.st_mode) == n7 && permissionsForFileAtPath.st_gid != permissionsForFileAtPath.st_uid) {
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/media/framework/platform/AndroidPlatform.java
+
+        return context.checkCallingOrSelfPermission("android.permission.BLUETOOTH") == 0;
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/app/SecureSettingsSyncModule.java
+
+        if (context.getPackageManager().checkPermission("android.permission.WRITE_SECURE_SETTINGS", context.getPackageName()) == 0) {
+        if (context.getPackageManager().checkPermission("android.permission.WRITE_SETTINGS", context.getPackageName()) == 0) {
+            DLog.warn("No permission. Unable to change platform-level setting to match app-level.");
+            DLog.warn("No permission to update platform-level settings.");
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/graphics/util/ImageDiskUtils.java
+
+                String permissionsForFile;
+                    permissionsForFile = getPermissionsForFile(file.getParentFile());
+                    permissionsForFile = "n/a";
+                array[1] = permissionsForFile;
+                DLog.warn("If permissions are good, there is likely an open stream to the file somewhere...");
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/client/Manifest.java
+
+    public static final class permission
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/avod/fileio/DiskUtils.java
+
+                String permissionsForFile;
+                    permissionsForFile = getPermissionsForFile(file.getParentFile());
+                    permissionsForFile = null;
+                array[1] = permissionsForFile;
+                DLog.warn("If permissions are good, there is likely an open stream to the file somewhere...");
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/communication/TCommService.java
+
+    private static final String EXAMINE_TCOMM_PERMISSION = "amazon.permission.EXAMINE_TCOMM";
+    private static final String USE_TCOMM_PERMISSION = "amazon.permission.USE_TCOMM";
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/client/metrics/MetricsServicePermissions.java
+
+    public static final String COLLECT_METRICS = "amazon.permission.COLLECT_METRICS";
+    public static final String OLD_COLLECT_METRICS = "tyto.permission.COLLECT_METRICS";
+    public static final String UPLOAD_METRICS = "amazon.permission.UPLOAD_METRICS";
+
+File:  sample_apks/amazon.apk.uncompressed//app/src/com/amazon/client/metrics/MetricsBroadcastReceiver.java
+
+            if (context.checkCallingOrSelfPermission("amazon.permission.UPLOAD_METRICS") == -1) {
+                MetricsBroadcastReceiver.log.error("onReceive", "Metrics upload permission denied.", new Object[0]);

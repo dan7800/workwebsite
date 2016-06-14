@@ -1,0 +1,359 @@
+----------------- Source Report ------------------
+Package: com.cnn.mobile.android.phone
+
+----------- Permissions Found in Files -----------
+sample_apks/cnn.apk.uncompressed//app/src/android/support/v4/app/NotificationManagerCompat.java
+sample_apks/cnn.apk.uncompressed//app/src/android/support/v4/app/AppOpsManagerCompat.java
+sample_apks/cnn.apk.uncompressed//app/src/android/support/v4/app/AppOpsManagerCompat23.java
+sample_apks/cnn.apk.uncompressed//app/src/android/support/v4/content/PermissionChecker.java
+sample_apks/cnn.apk.uncompressed//app/src/android/support/v4/content/FileProvider.java
+sample_apks/cnn.apk.uncompressed//app/src/android/support/v4/content/ContextCompat.java
+sample_apks/cnn.apk.uncompressed//app/src/android/support/v7/app/TwilightManager.java
+sample_apks/cnn.apk.uncompressed//app/src/com/comscore/metrics/Request.java
+sample_apks/cnn.apk.uncompressed//app/src/com/comscore/utils/OfflineMeasurementsCache.java
+sample_apks/cnn.apk.uncompressed//app/src/com/comscore/utils/Connectivity.java
+sample_apks/cnn.apk.uncompressed//app/src/com/mobileapptracker/MATConstants.java
+sample_apks/cnn.apk.uncompressed//app/src/com/mobileapptracker/MobileAppTracker.java
+sample_apks/cnn.apk.uncompressed//app/src/com/gigya/socialize/android/GSAPI.java
+sample_apks/cnn.apk.uncompressed//app/src/com/gigya/socialize/android/GSLoginRequest.java
+sample_apks/cnn.apk.uncompressed//app/src/com/gigya/socialize/android/login/LoginProviderFactory.java
+sample_apks/cnn.apk.uncompressed//app/src/com/gigya/socialize/android/login/providers/GooglePlusProvider.java
+sample_apks/cnn.apk.uncompressed//app/src/com/gigya/socialize/android/login/providers/FacebookProvider.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/maps/GoogleMap.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/measurement/AppMeasurementReceiver.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/measurement/internal/zzw.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/iid/InstanceIDListenerService.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/iid/zzc.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/auth/GoogleAuthUtil.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/auth/zzd.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/location/GeofencingApi.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/location/FusedLocationProviderApi.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/location/places/PlaceDetectionApi.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/internal/zzlz.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/internal/zzbl.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/internal/zzjv.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/internal/zzhj.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/internal/zznj.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/internal/zzdu.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/MobileAds.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/AdLoader.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/InterstitialAd.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/BaseAdView.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/search/SearchAdView.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/internal/zzf.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/internal/zzb.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/doubleclick/PublisherInterstitialAd.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/doubleclick/PublisherAdView.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/gcm/GoogleCloudMessaging.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/gcm/GcmTaskService.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/gcm/GcmReceiver.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/gcm/GcmPubSub.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/api/client/googleapis/auth/oauth2/DefaultCredentialProvider.java
+sample_apks/cnn.apk.uncompressed//app/src/com/google/api/client/util/store/FileDataStoreFactory.java
+sample_apks/cnn.apk.uncompressed//app/src/com/yieldmo/sdk/ab.java
+sample_apks/cnn.apk.uncompressed//app/src/com/cnn/mobile/android/phone/Manifest.java
+sample_apks/cnn.apk.uncompressed//app/src/com/cnn/mobile/android/phone/ui/MainActivity.java
+sample_apks/cnn.apk.uncompressed//app/src/com/cnn/mobile/android/phone/ui/SplashActivity.java
+sample_apks/cnn.apk.uncompressed//app/src/com/cnn/mobile/android/phone/service/IReportHelper.java
+sample_apks/cnn.apk.uncompressed//app/src/com/cnn/mobile/android/phone/service/PreferenceKeys.java
+sample_apks/cnn.apk.uncompressed//app/src/com/adobe/adobepass/accessenabler/storage/StorageManager.java
+
+------------- Occurrences in Source --------------
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/android/support/v4/app/NotificationManagerCompat.java
+
+                        if (resolveInfo.serviceInfo.permission != null) {
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/android/support/v4/app/AppOpsManagerCompat.java
+
+    public static String permissionToOp(@NonNull final String s) {
+        return AppOpsManagerCompat.IMPL.permissionToOp(s);
+        public String permissionToOp(final String s) {
+            return AppOpsManagerCompat23.permissionToOp(s);
+        public String permissionToOp(final String s) {
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/android/support/v4/app/AppOpsManagerCompat23.java
+
+    public static String permissionToOp(final String s) {
+        return AppOpsManager.permissionToOp(s);
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/android/support/v4/content/PermissionChecker.java
+
+            final String permissionToOp = AppOpsManagerCompat.permissionToOp(s);
+            if (permissionToOp == null) {
+            if (AppOpsManagerCompat.noteProxyOp(context, permissionToOp, s2) != 0) {
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/android/support/v4/content/FileProvider.java
+
+            throw new SecurityException("Provider must grant uri permissions");
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/android/support/v4/content/ContextCompat.java
+
+            throw new IllegalArgumentException("permission is null");
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/android/support/v7/app/TwilightManager.java
+
+        final int checkSelfPermission = PermissionChecker.checkSelfPermission(this.mContext, "android.permission.ACCESS_COARSE_LOCATION");
+        final int checkSelfPermission2 = PermissionChecker.checkSelfPermission(this.mContext, "android.permission.ACCESS_FINE_LOCATION");
+        Log.i("TwilightManager", "Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.");
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/comscore/metrics/Request.java
+
+        final boolean booleanValue = Permissions.check(appContext, "android.permission.ACCESS_NETWORK_STATE");
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/comscore/utils/OfflineMeasurementsCache.java
+
+        if (!Permissions.check(appContext, "android.permission.ACCESS_NETWORK_STATE")) {
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/comscore/utils/Connectivity.java
+
+        if (Permissions.check(context, "android.permission.ACCESS_WIFI_STATE") && ((ConnectivityManager)context.getSystemService("connectivity")).getNetworkInfo(1).isConnected()) {
+        if (Permissions.check(context, "android.permission.ACCESS_NETWORK_STATE") && Build$VERSION.SDK_INT >= 13) {
+        if (Permissions.check(context, "android.permission.ACCESS_NETWORK_STATE") && Build$VERSION.SDK_INT >= 13) {
+        if (Permissions.check(context, "android.permission.ACCESS_NETWORK_STATE")) {
+        if (Permissions.check(context, "android.permission.ACCESS_NETWORK_STATE")) {
+        if (Permissions.check(context, "android.permission.READ_PHONE_STATE")) {
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/mobileapptracker/MATConstants.java
+
+    static final String PERMISSION_GET_ACCOUNTS = "android.permission.GET_ACCOUNTS";
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/mobileapptracker/MobileAppTracker.java
+
+                if (MobileAppTracker.this.mContext.checkCallingOrSelfPermission("android.permission.GET_ACCOUNTS") == 0) {
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/gigya/socialize/android/GSAPI.java
+
+        String string = "permissions";
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/gigya/socialize/android/GSLoginRequest.java
+
+            final GSObject object = GSAPI.getInstance().getConfig().getObject("permissions", null);
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/gigya/socialize/android/login/LoginProviderFactory.java
+
+            final GSObject object = gsObject.getObject("permissions", null);
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/gigya/socialize/android/login/providers/GooglePlusProvider.java
+
+        if (Build$VERSION.SDK_INT >= 23 && activity.checkSelfPermission("android.permission.GET_ACCOUNTS") != 0) {
+            activity.requestPermissions(new String[] { "android.permission.GET_ACCOUNTS" }, GSAPI.getInstance().getNextAndroidPermissionsRequestCode(new GSAndroidPermissionListener() {
+                    gsObject.put("errorMessage", "Login failed - user denied permission to get Google+ accounts");
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/gigya/socialize/android/login/providers/FacebookProvider.java
+
+    private FragmentActivity permissionsActivity;
+    private GSPermissionResultHandler permissionsHandler;
+                    if (FacebookProvider.this.permissionsActivity != null) {
+                        FacebookProvider.this.permissionsActivity.finish();
+                        FacebookProvider.this.permissionsActivity = null;
+                    FacebookProvider.this.permissionsHandler = null;
+        final Set permissions = getAccessToken().getPermissions();
+            if (!permissions.contains(iterator.next())) {
+                    if (FacebookProvider.this.permissionsHandler != null) {
+                            FacebookProvider.this.permissionsHandler.onResult(false, new Exception(gsResponse.getErrorMessage()), null);
+                        FacebookProvider.this.permissionsHandler.onResult(b, null, access$800);
+            if (this.permissionsHandler != null) {
+                this.permissionsHandler.onResult(false, null, null);
+    public void requestPermissions(final String s, final List<String> list, final GSPermissionResultHandler permissionsHandler) {
+            permissionsHandler.onResult(false, null, null);
+            permissionsHandler.onResult(true, null, new ArrayList<String>());
+        this.permissionsHandler = permissionsHandler;
+                permissionsHandler.onResult(false, null, null);
+                FacebookProvider.this.permissionsActivity = fragmentActivity;
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/maps/GoogleMap.java
+
+    @RequiresPermission(anyOf = { "android.permission.ACCESS_COARSE_LOCATION", "android.permission.ACCESS_FINE_LOCATION" })
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/measurement/AppMeasurementReceiver.java
+
+        //   169: ldc             "AppMeasurementService at risk of not starting. For more reliable app measurements, add the WAKE_LOCK permission to your manifest."
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/measurement/internal/zzw.java
+
+                if (!this.zzCk().zzbk("android.permission.INTERNET")) {
+                    this.zzAo().zzCE().zzfg("App is missing INTERNET permission");
+                if (!this.zzCk().zzbk("android.permission.ACCESS_NETWORK_STATE")) {
+                    this.zzAo().zzCE().zzfg("App is missing ACCESS_NETWORK_STATE permission");
+            this.zzaYo = (this.zzCk().zzbk("android.permission.INTERNET") && this.zzCk().zzbk("android.permission.ACCESS_NETWORK_STATE") && AppMeasurementReceiver.zzY(this.getContext()) && AppMeasurementService.zzZ(this.getContext()) && b);
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/iid/InstanceIDListenerService.java
+
+        this.registerReceiver(this.zzaMX, intentFilter, "com.google.android.c2dm.permission.RECEIVE", (Handler)null);
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/iid/zzc.java
+
+                    if (packageManager.checkPermission("com.google.android.c2dm.permission.RECEIVE", resolveInfo.serviceInfo.packageName) != 0) {
+                        Log.w("InstanceID/Rpc", "Possible malicious package " + resolveInfo.serviceInfo.packageName + " declares " + "com.google.android.c2dm.intent.REGISTER" + " without permission");
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/auth/GoogleAuthUtil.java
+
+    @RequiresPermission("android.permission.MANAGE_ACCOUNTS")
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/auth/zzd.java
+
+    @RequiresPermission("android.permission.MANAGE_ACCOUNTS")
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/location/GeofencingApi.java
+
+    @RequiresPermission("android.permission.ACCESS_FINE_LOCATION")
+    @RequiresPermission("android.permission.ACCESS_FINE_LOCATION")
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/location/FusedLocationProviderApi.java
+
+    @RequiresPermission(anyOf = { "android.permission.ACCESS_COARSE_LOCATION", "android.permission.ACCESS_FINE_LOCATION" })
+    @RequiresPermission(anyOf = { "android.permission.ACCESS_COARSE_LOCATION", "android.permission.ACCESS_FINE_LOCATION" })
+    @RequiresPermission(anyOf = { "android.permission.ACCESS_COARSE_LOCATION", "android.permission.ACCESS_FINE_LOCATION" })
+    @RequiresPermission(anyOf = { "android.permission.ACCESS_COARSE_LOCATION", "android.permission.ACCESS_FINE_LOCATION" })
+    @RequiresPermission(anyOf = { "android.permission.ACCESS_COARSE_LOCATION", "android.permission.ACCESS_FINE_LOCATION" })
+    @RequiresPermission(anyOf = { "android.permission.ACCESS_COARSE_LOCATION", "android.permission.ACCESS_FINE_LOCATION" })
+    @RequiresPermission(anyOf = { "android.permission.ACCESS_COARSE_LOCATION", "android.permission.ACCESS_FINE_LOCATION" })
+    @RequiresPermission(anyOf = { "android.permission.ACCESS_COARSE_LOCATION", "android.permission.ACCESS_FINE_LOCATION" })
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/location/places/PlaceDetectionApi.java
+
+    @RequiresPermission("android.permission.ACCESS_FINE_LOCATION")
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/internal/zzlz.java
+
+        zzlz.zzaiX = "com.google.android.providers.gsf.permission.READ_GSERVICES";
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/internal/zzbl.java
+
+        return zzdn() && this.mContext.checkCallingOrSelfPermission("android.permission.WRITE_EXTERNAL_STORAGE") == 0;
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/internal/zzjv.java
+
+        return zzr.zzbC().zza(this.zzpD.getContext().getPackageManager(), this.zzpD.getContext().getPackageName(), "android.permission.ACCESS_FINE_LOCATION") || zzr.zzbC().zza(this.zzpD.getContext().getPackageManager(), this.zzpD.getContext().getPackageName(), "android.permission.ACCESS_COARSE_LOCATION");
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/internal/zzhj.java
+
+            if (zzr.zzbC().zza(packageManager, context.getPackageName(), "android.permission.ACCESS_NETWORK_STATE")) {
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/internal/zznj.java
+
+            if (packageManager != null && packageManager.checkPermission("android.permission.UPDATE_DEVICE_STATS", context.getPackageName()) == 0) {
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/internal/zzdu.java
+
+                zzb.zzaK("Could not set cache file permissions at " + this.zzzZ.getAbsolutePath());
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/MobileAds.java
+
+    @RequiresPermission("android.permission.INTERNET")
+    @RequiresPermission("android.permission.INTERNET")
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/AdLoader.java
+
+    @RequiresPermission("android.permission.INTERNET")
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/InterstitialAd.java
+
+    @RequiresPermission("android.permission.INTERNET")
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/BaseAdView.java
+
+    @RequiresPermission("android.permission.INTERNET")
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/search/SearchAdView.java
+
+    @RequiresPermission("android.permission.INTERNET")
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/internal/zzf.java
+
+        if (!zzr.zzbC().zza(this.zzpj.context.getPackageManager(), this.zzpj.context.getPackageName(), "android.permission.INTERNET")) {
+            zzn.zzcS().zza((ViewGroup)this.zzpj.zzrm, this.zzpj.zzrp, "Missing internet permission in AndroidManifest.xml.", "Missing internet permission in AndroidManifest.xml. You must have the following declaration: <uses-permission android:name=\"android.permission.INTERNET\" />");
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/internal/zzb.java
+
+        if (!zzr.zzbC().zza(this.zzpj.context.getPackageManager(), this.zzpj.context.getPackageName(), "android.permission.INTERNET") || !zzr.zzbC().zzI(this.zzpj.context)) {
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/doubleclick/PublisherInterstitialAd.java
+
+    @RequiresPermission("android.permission.INTERNET")
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/ads/doubleclick/PublisherAdView.java
+
+    @RequiresPermission("android.permission.INTERNET")
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/gcm/GoogleCloudMessaging.java
+
+        this.context.sendOrderedBroadcast(intent, "com.google.android.gtalkservice.permission.GTALK_SERVICE");
+    @RequiresPermission("com.google.android.c2dm.permission.RECEIVE")
+    @RequiresPermission("com.google.android.c2dm.permission.RECEIVE")
+    @RequiresPermission("com.google.android.c2dm.permission.RECEIVE")
+    @RequiresPermission("com.google.android.c2dm.permission.RECEIVE")
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/gcm/GcmTaskService.java
+
+    public static final String SERVICE_PERMISSION = "com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE";
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/gcm/GcmReceiver.java
+
+            if (context.checkCallingOrSelfPermission("android.permission.WAKE_LOCK") == 0) {
+                Log.d("GcmReceiver", "Missing wake lock permission, service start may be delayed");
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/android/gms/gcm/GcmPubSub.java
+
+    @RequiresPermission("com.google.android.c2dm.permission.RECEIVE")
+    @RequiresPermission("com.google.android.c2dm.permission.RECEIVE")
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/api/client/googleapis/auth/oauth2/DefaultCredentialProvider.java
+
+                    throw new IOException(String.format("Error code %s trying to get security access token from Compute Engine metadata for the default service account. This may be because the virtual machine instance does not have permission scopes specified.", statusCode));
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/google/api/client/util/store/FileDataStoreFactory.java
+
+                FileDataStoreFactory.LOGGER.warning("unable to change permissions for everybody: " + file);
+                FileDataStoreFactory.LOGGER.warning("unable to change permissions for owner: " + file);
+            FileDataStoreFactory.LOGGER.warning("Unable to set permissions for " + file + ", likely because you are running a version of Java prior to 1.6");
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/yieldmo/sdk/ab.java
+
+            final int checkCallingOrSelfPermission = context.checkCallingOrSelfPermission("android.permission.ACCESS_COARSE_LOCATION");
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/cnn/mobile/android/phone/Manifest.java
+
+    public static final class permission
+        public static final String C2D_MESSAGE = "com.cnn.mobile.android.phone.permission.C2D_MESSAGE";
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/cnn/mobile/android/phone/ui/MainActivity.java
+
+            boolean b = CNNApp.getInstance().prefs.getBoolean("push_notification_permission", false);
+            final SharedPreferences sharedPreferences = this.getSharedPreferences("push permission", 0);
+            if (sharedPreferences.contains("push_notification_permission")) {
+                b = sharedPreferences.getBoolean("push_notification_permission", false);
+                sharedPreferences.edit().remove("push_notification_permission").commit();
+                CNNApp.getInstance().prefs.edit().putBoolean("push_notification_permission", b).commit();
+                Log.i("MainActivity", "Found older version push permission set to " + b + ". Removed older SharedPreference.");
+                        CNNApp.getInstance().prefs.edit().putBoolean("push_notification_permission", true).commit();
+                        CNNApp.getInstance().prefs.edit().putBoolean("push_notification_permission", true).commit();
+        if (ContextCompat.checkSelfPermission((Context)this, "android.permission.ACCESS_COARSE_LOCATION") == 0) {
+            if (!ActivityCompat.shouldShowRequestPermissionRationale(this, "android.permission.ACCESS_COARSE_LOCATION")) {
+                ActivityCompat.requestPermissions(this, new String[] { "android.permission.ACCESS_COARSE_LOCATION" }, 1);
+            if (!CNNApp.getInstance().prefs.getBoolean("ask_location_permission_rationale", false)) {
+                        ActivityCompat.requestPermissions(MainActivity.this, new String[] { "android.permission.ACCESS_COARSE_LOCATION" }, 1);
+                        CNNApp.getInstance().prefs.edit().putBoolean("ask_location_permission_rationale", true).commit();
+                if (array2.length > 0 && array2[0] == 0 && ContextCompat.checkSelfPermission((Context)this, "android.permission.ACCESS_COARSE_LOCATION") == 0) {
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/cnn/mobile/android/phone/ui/SplashActivity.java
+
+        if (ContextCompat.checkSelfPermission((Context)this, "android.permission.READ_PHONE_STATE") == 0) {
+        Log.d(this.TAG, "Current app does not have READ_PHONE_STATE permission");
+        ActivityCompat.requestPermissions(this, new String[] { "android.permission.READ_PHONE_STATE" }, 225);
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/cnn/mobile/android/phone/service/IReportHelper.java
+
+                    Log.d("IReportHelper", "grant permission for " + IReportHelper.fileUri);
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/cnn/mobile/android/phone/service/PreferenceKeys.java
+
+    public static final String ASK_LOCATION_PERMISSION_RATIONALE = "ask_location_permission_rationale";
+    public static final String PUSH_PERMISSION = "push permission";
+    public static final String PUSH_PERMISSION_KEY = "push_notification_permission";
+
+File:  sample_apks/cnn.apk.uncompressed//app/src/com/adobe/adobepass/accessenabler/storage/StorageManager.java
+
+            if (ContextCompat.checkSelfPermission(appContext, "android.permission.WRITE_EXTERNAL_STORAGE") == 0) {
+                Log.w("StorageManager", "External Storage permission denied. Using application's storage. SSO will not be available");

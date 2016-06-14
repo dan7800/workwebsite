@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+	
+<style>
+	.post-container {
+	    margin: 20px 20px 0 0;  
+	    border: 0px solid #333;
+	    overflow: auto
+	}
+	.post-thumb {
+	    float: left
+	}
+	.post-thumb img {
+	    display: block
+	}
+	.post-content {
+	    margin-left: 180px
+	}
+
+</style>
+
+
+
+</head><body>
+
+
+
+
+<div id="mainPage">
+
+<h1><font color="red">Use a different output file</font></h1>
+
+<h1>Documentation</h1>
+	
+
+<h2>Installation</h2>
+<p></p>
+
+
+<h2>Usage</h2>
+<p></p>
+
+
+<h2>Output</h2>
+<p>
+MPerm produces an <a href="pages/files/analysis_com.amazon.avod.thirdpartyclient.txt" target="_blank">output file</a> with the following primary components:
+</p>
+
+
+<h4>Package</h4>
+The package name used in the app.
+<pre>Package: com.amazon.avod.thirdpartyclient</pre>
+
+
+<br />
+<h4>Android Permissions</h4>
+The report shows both '<a href="https://developer.android.com/guide/topics/security/normal-permissions.html" target="_blank">Normal</a>' and '<a href="https://developer.android.com/guide/topics/security/permissions.html#normal-dangerous" target="_blank">Dangerous</a>' Android permissions which the app may request.
+<pre>----------- Permissions from Manifest ------------
+   0 android.permission.WAKE_LOCK
+   1 com.amazon.identity.permission.GENERIC_IPC
+   2 com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER
+   3 android.permission.INTERACT_ACROSS_USERS
+   4 android.permission.CHANGE_NETWORK_STATE
+   5 android.permission.READ_PHONE_STATE
+   6 com.amazon.dcp.sso.permission.MANAGE_COR_PFM
+   7 com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS
+   8 amazon.permission.COLLECT_METRICS
+   9 android.permission.INTERNET
+  10 android.permission.AUTHENTICATE_ACCOUNTS
+  11 android.permission.ACCESS_NETWORK_STATE
+  12 com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED
+  13 com.amazon.dcp.sso.permission.account.changed
+  14 android.permission.MANAGE_ACCOUNTS
+  15 android.permission.ACCESS_WIFI_STATE
+  16 com.amazon.CONTENT_PROVIDER_ACCESS
+  17 android.permission.WRITE_EXTERNAL_STORAGE
+  18 com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed
+  19 com.amazon.identity.auth.device.perm.AUTH_SDK
+  20 android.permission.USE_CREDENTIALS
+  21 com.amazon.avod.SDK_ACCESS
+  22 com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE
+  23 android.permission.READ_SYNC_SETTINGS
+  24 android.permission.WRITE_SYNC_SETTINGS
+  25 com.amazon.dcp.metrics.permission.METRICS_PERMISSION
+  26 android.permission.GET_ACCOUNTS
+  27 com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER</pre>
+
+<br />
+
+
+
+
+
+<h4>Third Party Permissions</h4>
+Developers may also create their own <a href="https://source.android.com/security/overview/app-security.html#how-users-understand-third-party-applications" target="_blank">3rd party permissions</a>, which are also reported by MPerm.
+<pre>------------ Third Party Permissions -------------
+   0 com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER
+   1 com.amazon.identity.permission.GENERIC_IPC
+   2 com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED
+   3 com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS
+   4 com.amazon.dcp.sso.permission.account.changed
+   5 com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER
+   6 com.amazon.CONTENT_PROVIDER_ACCESS
+   7 com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed
+   8 com.amazon.identity.auth.device.perm.AUTH_SDK
+   9 com.amazon.dcp.metrics.permission.METRICS_PERMISSION
+  10 com.amazon.avod.SDK_ACCESS
+  11 com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE
+  12 com.amazon.dcp.sso.permission.MANAGE_COR_PFM</pre>
+
+
+
+<br />
+<h4>Requested Dangerous (and Groups)</h4>
+MPerm also reports all requested '<a href="https://developer.android.com/guide/topics/security/permissions.html#normal-dangerous" target="_blank">Dangerous</a>' permissions, along with the groups which they belong to.
+<pre>-------- Requested Dangerous Permissions ---------
+storage: READ_EXTERNAL_STORAGE
+storage: WRITE_EXTERNAL_STORAGE
+phone: READ_PHONE_STATE
+phone: CALL_PHONE
+phone: READ_CALL_LOG
+phone: WRITE_CALL_LOG
+phone: ADD_VOICEMAIL
+phone: USE_SIP
+phone: PROCESS_OUTGOING_CALLS
+contacts: READ_CONTACTS
+contacts: WRITE_CONTACTS
+contacts: GET_ACCOUNTS</pre>
+
+
+
+<br />
+<h4>Under and overprivs</h4>
+Many apps contain both <a href="https://people.eecs.berkeley.edu/~dawnsong/papers/2011%20Android%20permissions%20demystified.pdf" target="_blank">over &amp; under priviledges</a>, which are reported by the tool.
+<pre>
+--------- Unrequested Dangerous (Under) ----------
+if (context.checkCallingOrSelfPermission("android.permission.RECEIVE_SMS") == 0) {
+
+
+----------- Requested Dangerous (Over) -----------
+['READ_EXTERNAL_STORAGE', 'WRITE_EXTERNAL_STORAGE']
+['READ_PHONE_STATE', 'CALL_PHONE', 'READ_CALL_LOG', 'WRITE_CALL_LOG', 'ADD_VOICEMAIL', 'USE_SIP', 'PROCESS_OUTGOING_CALLS']
+['READ_CONTACTS', 'WRITE_CONTACTS', 'GET_ACCOUNTS']</pre>
+
+
+<br />
+<h4>Complete Output</h4>
+<p>An exmaple complete result set from an Amazon app is shown below.</p>
+<iframe src="pages/files/analysis_com.amazon.avod.thirdpartyclient.txt" width="400" height="2000"></iframe>
+
+
+
+<!-- Show some of the output of the app -->
+<!--
+<pre>
+  This text has
+  been formatted using
+  the HTML pre tag. The brower should
+  display all white space
+  as it was entered.
+  <iframe src="pages/files/analysis_com.amazon.avod.thirdpartyclient.txt"></iframe>
+</pre>
+-->
+
+
+
+</div>
+
+
+
+</body></html>

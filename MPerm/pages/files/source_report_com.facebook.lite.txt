@@ -1,0 +1,80 @@
+----------------- Source Report ------------------
+Package: com.facebook.lite
+
+----------- Permissions Found in Files -----------
+sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/android/support/v4/content/FileProvider.java
+sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/com/google/android/gcm/b.java
+sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/com/facebook/j/d/b.java
+sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/com/facebook/b/e.java
+sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/com/facebook/b/n.java
+sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/com/facebook/b/u.java
+sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/com/facebook/lite/l/a.java
+
+------------- Occurrences in Source --------------
+
+File:  sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/android/support/v4/content/FileProvider.java
+
+            throw new SecurityException("Provider must grant uri permissions");
+
+File:  sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/com/google/android/gcm/b.java
+
+                throw new IllegalStateException("Receiver " + name + " is not set with permission com.google.android.c2dm.permission.SEND");
+        //    21: ldc             ".permission.C2D_MESSAGE"
+        //    99: ldc             "Application does not define permission "
+        //   206: ldc_w           "com.google.android.c2dm.permission.SEND"
+        //   211: getfield        android/content/pm/ActivityInfo.permission:Ljava/lang/String;
+        //   253: ldc_w           "No receiver allowed to receive com.google.android.c2dm.permission.SEND"
+                context.registerReceiver((BroadcastReceiver)com.google.android.gcm.b.a, intentFilter, packageName + ".permission.C2D_MESSAGE", (Handler)null);
+
+File:  sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/com/facebook/j/d/b.java
+
+                    if (this.f != null && this.d != null && this.f.checkPermission("android.permission.BATTERY_STATS", this.d.getPackageName()) != 0) {
+                        this.n.a("Package does not have permission to access battery stats");
+
+File:  sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/com/facebook/b/e.java
+
+                if (e(context).a("android.permission.READ_PHONE_STATE")) {
+
+File:  sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/com/facebook/b/n.java
+
+        if (!new i(this.a.n).a("android.permission.WAKE_LOCK")) {
+
+File:  sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/com/facebook/b/u.java
+
+        a = new String[] { "android.permission.READ_CALENDAR", "android.permission.CAMERA", "android.permission.READ_CONTACTS", "android.permission.ACCESS_FINE_LOCATION", "android.permission.RECORD_AUDIO", "android.permission.READ_PHONE_STATE", "android.permission.BODY_SENSORS", "android.permission.SEND_SMS", "android.permission.READ_EXTERNAL_STORAGE" };
+            case "android.permission.READ_CALENDAR":
+            case "android.permission.WRITE_CALENDAR": {
+                return "android.permission-group.CALENDAR";
+            case "android.permission.CAMERA": {
+                return "android.permission-group.CAMERA";
+            case "android.permission.READ_CONTACTS":
+            case "android.permission.WRITE_CONTACTS":
+            case "android.permission.GET_ACCOUNTS": {
+                return "android.permission-group.CONTACTS";
+            case "android.permission.ACCESS_FINE_LOCATION":
+            case "android.permission.ACCESS_COARSE_LOCATION": {
+                return "android.permission-group.LOCATION";
+            case "android.permission.RECORD_AUDIO": {
+                return "android.permission-group.MICROPHONE";
+            case "android.permission.READ_PHONE_STATE":
+            case "android.permission.CALL_PHONE":
+            case "android.permission.READ_CALL_LOG":
+            case "android.permission.WRITE_CALL_LOG":
+            case "com.android.voicemail.permission.ADD_VOICEMAIL":
+            case "android.permission.USE_SIP":
+            case "android.permission.PROCESS_OUTGOING_CALLS": {
+                return "android.permission-group.PHONE";
+            case "android.permission.BODY_SENSORS": {
+                return "android.permission-group.SENSORS";
+            case "android.permission.SEND_SMS":
+            case "android.permission.RECEIVE_SMS":
+            case "android.permission.READ_SMS":
+            case "android.permission.RECEIVE_WAP_PUSH": {
+                return "android.permission-group.SMS";
+            case "android.permission.READ_EXTERNAL_STORAGE":
+            case "android.permission.WRITE_EXTERNAL_STORAGE": {
+                return "android.permission-group.STORAGE";
+
+File:  sample_apks/com.facebook.lite_4.apk.uncompressed//app/src/com/facebook/lite/l/a.java
+
+        if (this.a.checkCallingOrSelfPermission("android.permission.READ_CONTACTS") != 0) {

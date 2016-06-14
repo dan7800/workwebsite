@@ -1,0 +1,152 @@
+---------------- Analysis Report -----------------
+Package: com.facebook.lite
+
+----------- Permissions from Manifest ------------
+   0 android.permission.READ_CONTACTS
+   1 android.permission.CALL_PHONE
+   2 com.facebook.receiver.permission.ACCESS
+   3 android.permission.WRITE_CALENDAR
+   4 android.permission.READ_CALENDAR
+   5 android.permission.CHANGE_WIFI_STATE
+   6 android.permission.CHANGE_NETWORK_STATE
+   7 com.facebook.orca.provider.ACCESS
+   8 android.permission.ACCESS_WIFI_STATE
+   9 android.permission.INTERNET
+  10 com.facebook.lite.permission.C2D_MESSAGE
+  11 com.facebook.permission.prod.FB_APP_COMMUNICATION
+  12 android.permission.BROADCAST_STICKY
+  13 android.permission.READ_SMS
+  14 com.sec.android.provider.badge.permission.WRITE
+  15 android.permission.SYSTEM_ALERT_WINDOW
+  16 android.permission.WRITE_CONTACTS
+  17 android.permission.GET_ACCOUNTS
+  18 android.permission.RECORD_AUDIO
+  19 android.permission.ACCESS_FINE_LOCATION
+  20 android.permission.CAMERA
+  21 android.permission.READ_PROFILE
+  22 android.permission.ACCESS_NETWORK_STATE
+  23 android.permission.VIBRATE
+  24 android.permission.RECEIVE_BOOT_COMPLETED
+  25 com.google.android.c2dm.permission.RECEIVE
+  26 android.permission.WRITE_EXTERNAL_STORAGE
+  27 com.android.launcher.permission.UNINSTALL_SHORTCUT
+  28 android.permission.BATTERY_STATS
+  29 com.android.launcher.permission.INSTALL_SHORTCUT
+  30 android.permission.GET_TASKS
+  31 android.permission.READ_PHONE_STATE
+  32 android.permission.ACCESS_COARSE_LOCATION
+  33 android.permission.WAKE_LOCK
+
+------------ Third Party Permissions -------------
+   0 com.android.launcher.permission.UNINSTALL_SHORTCUT
+   1 com.facebook.receiver.permission.ACCESS
+   2 com.android.launcher.permission.INSTALL_SHORTCUT
+   3 com.facebook.lite.permission.C2D_MESSAGE
+   4 com.facebook.permission.prod.FB_APP_COMMUNICATION
+   5 com.sec.android.provider.badge.permission.WRITE
+   6 com.facebook.orca.provider.ACCESS
+   7 com.google.android.c2dm.permission.RECEIVE
+
+-------- Requested Dangerous Permissions ---------
+camera: CAMERA
+microphone: RECORD_AUDIO
+phone: READ_PHONE_STATE
+phone: CALL_PHONE
+phone: READ_CALL_LOG
+phone: WRITE_CALL_LOG
+phone: ADD_VOICEMAIL
+phone: USE_SIP
+phone: PROCESS_OUTGOING_CALLS
+calendar: READ_CALENDAR
+calendar: WRITE_CALENDAR
+storage: READ_EXTERNAL_STORAGE
+storage: WRITE_EXTERNAL_STORAGE
+location: ACCESS_FINE_LOCATION
+location: ACCESS_COARSE_LOCATION
+sms: SEND_SMS
+sms: RECEIVE_SMS
+sms: READ_SMS
+sms: RECEIVE_WAP_PUSH
+sms: RECEIVE_MMS
+contacts: READ_CONTACTS
+contacts: WRITE_CONTACTS
+contacts: GET_ACCOUNTS
+
+------------- Dangerous Permissions --------------
+Total found: 33
+
+USE_SIP:             case "android.permission.USE_SIP":
+
+PROCESS_OUTGOING_CALLS:             case "android.permission.PROCESS_OUTGOING_CALLS": {
+
+READ_CONTACTS:         if (this.a.checkCallingOrSelfPermission("android.permission.READ_CONTACTS") != 0) {
+
+READ_PHONE_STATE:         a = new String[] { "android.permission.READ_CALENDAR", "android.permission.CAMERA", "android.permission.READ_CONTACTS", "android.permission.ACCESS_FINE_LOCATION", "android.permission.RECORD_AUDIO", "android.permission.READ_PHONE_STATE", "android.permission.BODY_SENSORS", "android.permission.SEND_SMS", "android.permission.READ_EXTERNAL_STORAGE" };
+
+GET_ACCOUNTS:             case "android.permission.GET_ACCOUNTS": {
+
+CALL_PHONE:             case "android.permission.CALL_PHONE":
+
+READ_CALL_LOG:             case "android.permission.READ_CALL_LOG":
+
+READ_CALENDAR:             case "android.permission.READ_CALENDAR":
+
+RECEIVE_SMS:             case "android.permission.RECEIVE_SMS":
+
+ACCESS_FINE_LOCATION:             case "android.permission.ACCESS_FINE_LOCATION":
+
+READ_PHONE_STATE:                 if (e(context).a("android.permission.READ_PHONE_STATE")) {
+
+CAMERA:         a = new String[] { "android.permission.READ_CALENDAR", "android.permission.CAMERA", "android.permission.READ_CONTACTS", "android.permission.ACCESS_FINE_LOCATION", "android.permission.RECORD_AUDIO", "android.permission.READ_PHONE_STATE", "android.permission.BODY_SENSORS", "android.permission.SEND_SMS", "android.permission.READ_EXTERNAL_STORAGE" };
+
+WRITE_CALENDAR:             case "android.permission.WRITE_CALENDAR": {
+
+RECORD_AUDIO:             case "android.permission.RECORD_AUDIO": {
+
+READ_SMS:             case "android.permission.READ_SMS":
+
+RECORD_AUDIO:         a = new String[] { "android.permission.READ_CALENDAR", "android.permission.CAMERA", "android.permission.READ_CONTACTS", "android.permission.ACCESS_FINE_LOCATION", "android.permission.RECORD_AUDIO", "android.permission.READ_PHONE_STATE", "android.permission.BODY_SENSORS", "android.permission.SEND_SMS", "android.permission.READ_EXTERNAL_STORAGE" };
+
+ACCESS_FINE_LOCATION:         a = new String[] { "android.permission.READ_CALENDAR", "android.permission.CAMERA", "android.permission.READ_CONTACTS", "android.permission.ACCESS_FINE_LOCATION", "android.permission.RECORD_AUDIO", "android.permission.READ_PHONE_STATE", "android.permission.BODY_SENSORS", "android.permission.SEND_SMS", "android.permission.READ_EXTERNAL_STORAGE" };
+
+WRITE_CONTACTS:             case "android.permission.WRITE_CONTACTS":
+
+RECEIVE_WAP_PUSH:             case "android.permission.RECEIVE_WAP_PUSH": {
+
+READ_CONTACTS:         a = new String[] { "android.permission.READ_CALENDAR", "android.permission.CAMERA", "android.permission.READ_CONTACTS", "android.permission.ACCESS_FINE_LOCATION", "android.permission.RECORD_AUDIO", "android.permission.READ_PHONE_STATE", "android.permission.BODY_SENSORS", "android.permission.SEND_SMS", "android.permission.READ_EXTERNAL_STORAGE" };
+
+BODY_SENSORS:         a = new String[] { "android.permission.READ_CALENDAR", "android.permission.CAMERA", "android.permission.READ_CONTACTS", "android.permission.ACCESS_FINE_LOCATION", "android.permission.RECORD_AUDIO", "android.permission.READ_PHONE_STATE", "android.permission.BODY_SENSORS", "android.permission.SEND_SMS", "android.permission.READ_EXTERNAL_STORAGE" };
+
+WRITE_EXTERNAL_STORAGE:             case "android.permission.WRITE_EXTERNAL_STORAGE": {
+
+READ_CONTACTS:             case "android.permission.READ_CONTACTS":
+
+CAMERA:             case "android.permission.CAMERA": {
+
+WRITE_CALL_LOG:             case "android.permission.WRITE_CALL_LOG":
+
+BODY_SENSORS:             case "android.permission.BODY_SENSORS": {
+
+READ_PHONE_STATE:             case "android.permission.READ_PHONE_STATE":
+
+READ_CALENDAR:         a = new String[] { "android.permission.READ_CALENDAR", "android.permission.CAMERA", "android.permission.READ_CONTACTS", "android.permission.ACCESS_FINE_LOCATION", "android.permission.RECORD_AUDIO", "android.permission.READ_PHONE_STATE", "android.permission.BODY_SENSORS", "android.permission.SEND_SMS", "android.permission.READ_EXTERNAL_STORAGE" };
+
+READ_EXTERNAL_STORAGE:         a = new String[] { "android.permission.READ_CALENDAR", "android.permission.CAMERA", "android.permission.READ_CONTACTS", "android.permission.ACCESS_FINE_LOCATION", "android.permission.RECORD_AUDIO", "android.permission.READ_PHONE_STATE", "android.permission.BODY_SENSORS", "android.permission.SEND_SMS", "android.permission.READ_EXTERNAL_STORAGE" };
+
+READ_EXTERNAL_STORAGE:             case "android.permission.READ_EXTERNAL_STORAGE":
+
+SEND_SMS:             case "android.permission.SEND_SMS":
+
+SEND_SMS:         a = new String[] { "android.permission.READ_CALENDAR", "android.permission.CAMERA", "android.permission.READ_CONTACTS", "android.permission.ACCESS_FINE_LOCATION", "android.permission.RECORD_AUDIO", "android.permission.READ_PHONE_STATE", "android.permission.BODY_SENSORS", "android.permission.SEND_SMS", "android.permission.READ_EXTERNAL_STORAGE" };
+
+ACCESS_COARSE_LOCATION:             case "android.permission.ACCESS_COARSE_LOCATION": {
+
+
+--------- Unrequested Dangerous (Under) ----------
+        a = new String[] { "android.permission.READ_CALENDAR", "android.permission.CAMERA", "android.permission.READ_CONTACTS", "android.permission.ACCESS_FINE_LOCATION", "android.permission.RECORD_AUDIO", "android.permission.READ_PHONE_STATE", "android.permission.BODY_SENSORS", "android.permission.SEND_SMS", "android.permission.READ_EXTERNAL_STORAGE" };
+
+            case "android.permission.BODY_SENSORS": {
+
+
+----------- Requested Dangerous (Over) -----------
+

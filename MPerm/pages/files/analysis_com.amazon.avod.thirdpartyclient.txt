@@ -1,0 +1,77 @@
+---------------- Analysis Report -----------------
+Package: com.amazon.avod.thirdpartyclient
+
+----------- Permissions from Manifest ------------
+   0 android.permission.WAKE_LOCK
+   1 com.amazon.identity.permission.GENERIC_IPC
+   2 com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER
+   3 android.permission.INTERACT_ACROSS_USERS
+   4 android.permission.CHANGE_NETWORK_STATE
+   5 android.permission.READ_PHONE_STATE
+   6 com.amazon.dcp.sso.permission.MANAGE_COR_PFM
+   7 com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS
+   8 amazon.permission.COLLECT_METRICS
+   9 android.permission.INTERNET
+  10 android.permission.AUTHENTICATE_ACCOUNTS
+  11 android.permission.ACCESS_NETWORK_STATE
+  12 com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED
+  13 com.amazon.dcp.sso.permission.account.changed
+  14 android.permission.MANAGE_ACCOUNTS
+  15 android.permission.ACCESS_WIFI_STATE
+  16 com.amazon.CONTENT_PROVIDER_ACCESS
+  17 android.permission.WRITE_EXTERNAL_STORAGE
+  18 com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed
+  19 com.amazon.identity.auth.device.perm.AUTH_SDK
+  20 android.permission.USE_CREDENTIALS
+  21 com.amazon.avod.SDK_ACCESS
+  22 com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE
+  23 android.permission.READ_SYNC_SETTINGS
+  24 android.permission.WRITE_SYNC_SETTINGS
+  25 com.amazon.dcp.metrics.permission.METRICS_PERMISSION
+  26 android.permission.GET_ACCOUNTS
+  27 com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER
+
+------------ Third Party Permissions -------------
+   0 com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER
+   1 com.amazon.identity.permission.GENERIC_IPC
+   2 com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED
+   3 com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS
+   4 com.amazon.dcp.sso.permission.account.changed
+   5 com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER
+   6 com.amazon.CONTENT_PROVIDER_ACCESS
+   7 com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed
+   8 com.amazon.identity.auth.device.perm.AUTH_SDK
+   9 com.amazon.dcp.metrics.permission.METRICS_PERMISSION
+  10 com.amazon.avod.SDK_ACCESS
+  11 com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE
+  12 com.amazon.dcp.sso.permission.MANAGE_COR_PFM
+
+-------- Requested Dangerous Permissions ---------
+storage: READ_EXTERNAL_STORAGE
+storage: WRITE_EXTERNAL_STORAGE
+phone: READ_PHONE_STATE
+phone: CALL_PHONE
+phone: READ_CALL_LOG
+phone: WRITE_CALL_LOG
+phone: ADD_VOICEMAIL
+phone: USE_SIP
+phone: PROCESS_OUTGOING_CALLS
+contacts: READ_CONTACTS
+contacts: WRITE_CONTACTS
+contacts: GET_ACCOUNTS
+
+------------- Dangerous Permissions --------------
+Total found: 1
+
+RECEIVE_SMS:             if (context.checkCallingOrSelfPermission("android.permission.RECEIVE_SMS") == 0) {
+
+
+--------- Unrequested Dangerous (Under) ----------
+            if (context.checkCallingOrSelfPermission("android.permission.RECEIVE_SMS") == 0) {
+
+
+----------- Requested Dangerous (Over) -----------
+['READ_EXTERNAL_STORAGE', 'WRITE_EXTERNAL_STORAGE']
+['READ_PHONE_STATE', 'CALL_PHONE', 'READ_CALL_LOG', 'WRITE_CALL_LOG', 'ADD_VOICEMAIL', 'USE_SIP', 'PROCESS_OUTGOING_CALLS']
+['READ_CONTACTS', 'WRITE_CONTACTS', 'GET_ACCOUNTS']
+
