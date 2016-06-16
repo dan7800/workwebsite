@@ -27,26 +27,38 @@
 
 
 <div id="mainPage">
-<h1>MPerm: Android Permissions Analysis Tool</h1>
+
+
+<h1>M-Perm: Android Permissions Analysis Tool</h1>
 
 <h3>Project Abstract</h3>
-	<p>Android Applications (apps) operate under a permissions-based system where access to APIs are restricted through the use of permissions. Unfortunately, there is no built-in verification system to ensure that apps do request too many, or too few permissions, which could lead to serious quality and privacy concerns. Apps which request too many permissions create unnecessary vulnerabilities, which may be abused by SDKs within the app or to other malicious apps installed on the device.</p>
+<p>
+
+Android Applications (apps) operate under a permissions-based system where access to specific APIs are restricted through the use of permissions. There is, unfortunately, no built-in verification system to ensure that apps do not request too many or too few permissions, which could lead to serious quality and/or privacy concerns. Apps requesting too many permissions create unnecessary vulnerabilities, leaving the potential for abuse by SDKs within the app or other malicious apps installed on the device. 
+ </p>
 
 <p>
-With the introduction of Marshmallow 6.0 (M), the Android permission structure changed from requiring users to accept or reject all permissions at install time, to allowing developers to request permissions at run-time. Users will also have more control over altering the permissions the apps have been granted after the app has already been installed on their device. Some of the motivating factors for switching to this new model include streamlining the app installation and update process, and putting users more in control of the permissions their apps use.</p>
+With the introduction of Marshmallow 6.0 (M), the Android permission structure has substantially changed from requiring users to accept or reject all permissions when installing the app, to allowing developers to request permissions at run-time. Users also have finer control, gaining the ability to alter individual permissions after installation. Some of the motivating factors for switching to this new model include streamlining the app installation/update process and placing users more in control of the permissions their apps use.
+ </p>
 
 <p>
-In order to assist with discovery of over and under privileges in Android apps in this new permission structure, we created a new detection tool, MPerm, which can quickly and easy identify permission misuse in Android apps. The tool, complete usage instruc- tions, screencast available via Youtube.
-	 </p>
+In order to assist with the discovery of under- and over-privileges within this new permission structure, we created a new detection tool, <i>M-Perm</i>, which can easily and effectively identify permission misuse in Android apps. M-Perm also identifies permission usage in apps including requested normal, dangerous, and 3rd party permissions. The tool, complete usage instructions, and screencast are available on this project website.
+</p>
 
 
 
 
+	
+
+
+
+<!--
 <h3>Tool Download</h3>
 <p>
-	MPerm may be downloaded <a href="https://github.com/dan7800/MPermission" target="_blank">here</a>.
+	M-Perm may be downloaded <a href="https://github.com/dan7800/MPermission" target="_blank">here</a>.
 
 </p>
+-->
 
 </div>
 

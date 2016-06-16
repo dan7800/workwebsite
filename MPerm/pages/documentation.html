@@ -41,16 +41,46 @@ ALso add in other stuff about the reports directory.
 	
 
 <h2>Installation</h2>
-<p></p>
+
+<h4>Virtual Machine</h4>
+<p>Users are recommended to use M-Perm with the provided Virtual Machine. Please visit <a href="index.html?page=tooldownload">this</a> page for more instructions how to use the provided Virtual Machine.</p>
 
 
+<h4>Download from Source</h4>
+
+<p>You may also install M-Perm using the publicly available source code using the <a href="https://github.com/dan7800/MPermission/blob/master/README.md" target="_blank">instructions</a> provided on the project's <a href="https://github.com/dan7800/MPermission/" target="_blank">GitHub</a> page.</p>
+
+
+
+
+
+<!--
 <h2>Usage</h2>
-<p>
-  
-  <!--
-<iframe src="https://www.youtube.com/watch?v=Wz6L2D3dFKs"
-   width="560" height="315" frameborder="0" allowfullscreen></iframe>
-   --></p>
+<p>Once installed, you may use the following steps to examine an app using M-Perm.
+
+<ol>
+  <li></li>
+  <li></li>
+  <li></li>
+
+</ol>
+-->
+
+<!--
+Choose Target App to Analyze: M-Perm is capable of per- forming a permissions analysis on Android M 6.0 (API 23) apps. Although we have provided many popular APK files in the VM for analysis, the user may choose to examine any Android M app that they choose. In or VM, we use the Desktop/mperm/MPermission/sample_apks direc- tory. The user should be cautious to only analyze Marshmal- low apps using M-Perm, as older apps may lead to unexpected results.
+4. Reverse Engineer Target App: The next step is to extract the necessary files from the APK file or analysis. This is the most time consuming process of M-Perm. The following command should be used to begin the reverse engineering process:
+Figure 3 shows the execution of the reverse engineering por- tion of the app.
+5. Run Analysis Portion: The analysis portion of M-Perm will only take a few seconds to run, and may be ran using the following command:
+Figure 4 demonstrates the analysis portion of M-Perm.
+6. Analyze Output: The previous analysis portion of M-Perm produces the output of two .txt files:
+(a) analysis_<package_name>
+(b) source_report_<package_name>
+These are located in the reports directory of M-Perm. A sam- ple output of Facebook Lite analysis_<package_name> is shown in Listing 1.
+
+-->
+
+
+</p>
 
 <h4>Youtube Screencast</h4>
    <iframe width="560" height="315" src="https://www.youtube.com/embed/Wz6L2D3dFKs" frameborder="0" allowfullscreen></iframe>
@@ -61,7 +91,7 @@ ALso add in other stuff about the reports directory.
 
 <h2>Output</h2>
 <p>
-MPerm produces an <a href="pages/files/analysis_com.amazon.avod.thirdpartyclient.txt" target="_blank">output file</a> with the following primary components:
+M-Perm produces an <a href="pages/files/analysis_com.amazon.avod.thirdpartyclient.txt" target="_blank">output file</a> with the following primary components:
 </p>
 
 
@@ -110,7 +140,7 @@ The report shows both '<a href="https://developer.android.com/guide/topics/secur
 
 
 <h4>Third Party Permissions</h4>
-Developers may also create their own <a href="https://source.android.com/security/overview/app-security.html#how-users-understand-third-party-applications" target="_blank">3rd party permissions</a>, which are also reported by MPerm.
+Developers may also create their own <a href="https://source.android.com/security/overview/app-security.html#how-users-understand-third-party-applications" target="_blank">3rd party permissions</a>, which are also reported by M-Perm.
 <pre>------------ Third Party Permissions -------------
    0 com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER
    1 com.amazon.identity.permission.GENERIC_IPC
@@ -130,7 +160,7 @@ Developers may also create their own <a href="https://source.android.com/securit
 
 <br />
 <h4>Requested Dangerous (and Groups)</h4>
-MPerm also reports all requested '<a href="https://developer.android.com/guide/topics/security/permissions.html#normal-dangerous" target="_blank">Dangerous</a>' permissions, along with the groups which they belong to.
+M-Perm also reports all requested '<a href="https://developer.android.com/guide/topics/security/permissions.html#normal-dangerous" target="_blank">Dangerous</a>' permissions, along with the groups which they belong to.
 <pre>-------- Requested Dangerous Permissions ---------
 storage: READ_EXTERNAL_STORAGE
 storage: WRITE_EXTERNAL_STORAGE
