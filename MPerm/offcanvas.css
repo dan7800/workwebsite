@@ -96,4 +96,20 @@ padding-right: 20px;
   padding-top: 5px;
 }
 
-*/
+
+.top-main-image {
+  float: right;
+  clear: both;
+/*  padding: 10px; */
+padding-left: 20px;
+  min-width: 160px;
+  width: 50%;
+  max-width: 300px;
+}
+
+
+
+.pull-left {
+  width: 20%;
+}
+
