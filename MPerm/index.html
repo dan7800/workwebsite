@@ -7,6 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -141,6 +142,16 @@ default:
     <!-- end favicon info -->
 
 
+<!-- start fancybox info -->
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox").fancybox();
+  });
+</script>
+<!-- end fancybox info -->
+
+
 
   </head>
 
@@ -218,34 +229,6 @@ default:
 
 
 
-<!--
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-               
-        <div class="textwidget">
-
-
-
-        <h2 class="widget-title">Announcements</h2> 
-
-        <b>SAC Paper Accepted</b>: "Architectural Clones: Toward Tactical Code Reuse" <br /><br />
-
-
-
-       </aside>
-
-    
-        </div>
-      </div>
-
-
--->
-
-
-<!--
-      <footer>
-        <p>&copy; Dan Krutz</p>
-      </footer>
--->
     </div><!--/.container-->
 
 
@@ -282,6 +265,30 @@ default:
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="offcanvas.js"></script>
+
+
+<!-- start JQuery image viewer -->
+<!-- should probably just move this to the pages that use it -->
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
+
+<!-- end JQuery image viewer -->
+
 
 
 

@@ -16,23 +16,74 @@
 <h2>Installation</h2>
 
 <h4>Virtual Machine</h4>
-<p>Users are recommended to use M-Perm with the provided Virtual Machine. Please visit <a href="index.html?page=tooldownload">this</a> page for more instructions how to use the provided Virtual Machine.</p>
+<p>Users are recommended to use M-Perm with the provided Virtual Machine. To use this VM, you may use the instructions provided below, or visit <a href="index.html?page=tooldownload">this</a> page for more instructions how to use the provided Virtual Machine.</p>
 
 
-<h4>Download from Source</h4>
+<p>
+Once you have <i>resumed the VM's suspension</i>, you will screen a screen similar to the one below.</p>
 
-<p>You may also install M-Perm using the publicly available source code using the <a href="https://github.com/dan7800/MPermission/blob/master/README.md" target="_blank">instructions</a> provided on the project's <a href="https://github.com/dan7800/MPermission/" target="_blank">GitHub</a> page.</p>
 
+<a class="fancybox" rel="group" href="images/VM-initial-screen.png"><img src="images/VM-initial-screen.png" alt="Initial VM screen" width="470" height="250" /></a>
+<figcaption>Fig1. - Initial VM screen after resuming suspension.</figcaption>
+  
+<br />
+
+<p>The next step is to begin the reverse engineering of the app (apk). Since the VM should already be loaded with the appropriate command to run this on a sample Adobe.apk file, you should merely need to press enter inside of the terminal. Depending on the size the apk, the reverse engineering process can take several minutes, so please be patient. A sample command which you could use to reverse engineer an apk is shown below.</p>
+
+<pre>python3 MPerm.py -d [--decompile] apk_path</pre>
+<br />
+
+
+<a class="fancybox" rel="group" href="images/VM-decompile.png"><img src="images/VM-decompile.png" alt="App Reverse Engineering" width="470" height="250" /></a>
+<figcaption>Fig2. - Reverse Engineering Process.</figcaption>
+  
+<br />
+
+<p>Once the reverse engineering process is completed, you should see a screen like the one below.</p>
+
+<a class="fancybox" rel="group" href="images/VM-Decompile-complete.png"><img src="images/VM-Decompile-complete.png" alt="App Reverse Engineering" width="470" height="260" /></a>
+<figcaption>Fig3. - Completed Reverse Engineering Process.</figcaption>
+  
+<br />
+
+
+<p>The next step is to begin the analysis process. This should only take 1-2 seconds to complete. The analysis portion may be run using the following syntax:
+
+<pre>python3 MPerm.py -a [--analyze]   decompiled_apk_path</pre>
 
 </p>
 
-<h4>Youtube Screencast</h4>
+<a class="fancybox" rel="group" href="images/VM-ReportCompleted.png"><img src="images/VM-ReportCompleted.png" alt="App Reverse Engineering" width="470" height="130" /></a>
+<figcaption>Fig4. - Analysis Process.</figcaption>
+  
+<br />
+
+
+<p>As noted in the <a href="#output">Output</a> section below, two report files will be created in the noted reports directory. When using the provided Adobe.apk app, the two generated output files should look like these:
+
+<ol>
+  <li><a href="pages/files/analysis_com.adobe.reader.txt" target="_blank">analysis_com.adobe.reader.txt</a></li>
+  <li><a href="pages/files/source_report_com.adobe.reader.txt" target="_blank">source_report_com.adobe.reader.txt</a></li>
+</ol>
+
+</p>
+
+
+<br />
+<h2>Download from Source</h2>
+
+<p>You may also install M-Perm using the publicly available source code using the <a href="https://github.com/dan7800/MPermission/blob/master/README.md" target="_blank">instructions</a> provided on the project's <a href="https://github.com/dan7800/MPermission/" target="_blank">GitHub</a> page. This may be more challenging than using the provided VM, due to possible dependency related issues.</p>
+
+
+<br />
+<h4>Youtube Screen cast</h4>
+<p>This screen cast may be helpful in providing a basic understanding of M-Perm, and its usage.</p>
    <iframe width="560" height="315" src="https://www.youtube.com/embed/Wz6L2D3dFKs" frameborder="0" allowfullscreen></iframe>
 
 
 
 
-
+<a name="output"></a> 
 <h2>Output</h2>
 <p>
 M-Perm produces an <a href="pages/files/analysis_com.amazon.avod.thirdpartyclient.txt" target="_blank">output file</a> with the following primary components:
@@ -139,20 +190,6 @@ if (context.checkCallingOrSelfPermission("android.permission.RECEIVE_SMS") == 0)
 <h4>Complete Output</h4>
 <p>An exmaple complete result set from an Amazon app is shown below.</p>
 <iframe src="pages/files/analysis_com.amazon.avod.thirdpartyclient.txt" width="400" height="2000"></iframe>
-
-
-
-<!-- Show some of the output of the app -->
-<!--
-<pre>
-  This text has
-  been formatted using
-  the HTML pre tag. The brower should
-  display all white space
-  as it was entered.
-  <iframe src="pages/files/analysis_com.amazon.avod.thirdpartyclient.txt"></iframe>
-</pre>
--->
 
 
 

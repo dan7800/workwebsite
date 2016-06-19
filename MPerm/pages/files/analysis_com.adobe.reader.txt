@@ -1,0 +1,36 @@
+---------------- Analysis Report -----------------
+Package: com.adobe.reader
+
+----------- Permissions from Manifest ------------
+   0 android.permission.WRITE_EXTERNAL_STORAGE
+   1 com.android.vending.BILLING
+   2 android.permission.CAMERA
+   3 android.permission.ACCESS_NETWORK_STATE
+   4 android.permission.INTERNET
+
+------------ Third Party Permissions -------------
+   0 com.android.vending.BILLING
+
+-------- Requested Dangerous Permissions ---------
+storage: READ_EXTERNAL_STORAGE
+storage: WRITE_EXTERNAL_STORAGE
+camera: CAMERA
+
+------------- Dangerous Permissions --------------
+Total found: 5
+
+WRITE_EXTERNAL_STORAGE:         return checkAndRequestStoragePermissionsImpl(null, fragment, new String[] { "android.permission.WRITE_EXTERNAL_STORAGE" }, s, n);
+
+WRITE_EXTERNAL_STORAGE:         return checkAndRequestStoragePermissionsImpl(activity, null, new String[] { "android.permission.WRITE_EXTERNAL_STORAGE" }, s, n);
+
+CAMERA:         if (!com.adobe.libs.buildingblocks.utils.a.a(this.b, new String[] { "android.permission.CAMERA" }, 200)) {
+
+WRITE_EXTERNAL_STORAGE:         return Build$VERSION.SDK_INT < 23 || context.checkSelfPermission("android.permission.WRITE_EXTERNAL_STORAGE") == 0;
+
+WRITE_EXTERNAL_STORAGE:         if (!com.adobe.libs.buildingblocks.utils.a.a(this.b, new String[] { "android.permission.WRITE_EXTERNAL_STORAGE" }, 100)) {
+
+
+--------- Unrequested Dangerous (Under) ----------
+
+----------- Requested Dangerous (Over) -----------
+

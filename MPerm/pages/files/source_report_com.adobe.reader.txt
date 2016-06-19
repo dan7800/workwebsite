@@ -1,0 +1,451 @@
+----------------- Source Report ------------------
+Package: com.adobe.reader
+
+----------- Permissions Found in Files -----------
+sample_apks/adobe.apk.uncompressed//app/src/android/support/v13/app/FragmentCompat$BaseFragmentCompatImpl$1.java
+sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/app/AppOpsManagerCompat$AppOpsManagerImpl.java
+sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/app/ActivityCompat$1.java
+sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/app/NotificationManagerCompat$SideChannelManager.java
+sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/app/AppOpsManagerCompat.java
+sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/app/AppOpsManagerCompat$AppOpsManager23.java
+sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/app/AppOpsManagerCompat23.java
+sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/content/PermissionChecker.java
+sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/content/FileProvider.java
+sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/content/ContextCompat.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$13.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$8.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWLocalFileListFragment.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$7.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$2$2.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWLocalFileListFragment$3.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWLocalFileListFragment$ARDuplicateSelectedFileAsyncTask.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$11.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWLocalFileListFragment$1.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$5$1.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$6$1.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$9.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$4.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$10.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$2$1.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$3.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWLocalFileListFragment$4.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$2.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$12.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$16.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$ReleaseScreenDimTimerTask$1.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$16.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$27.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$17.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$11$1.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$34.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$26.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$ReleaseScreenDimTimerTask.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$7.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$31.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$4.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$6.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$UIElementsHandler.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$10.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$13.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$25.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$20.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$28.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$3.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$32.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$33.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$25.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$8.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$23.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$13$1.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$22.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$29.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$24.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$6.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$27$1.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$ARDocumentListSearchView.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$1.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$12.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$28.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$23.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$24.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$17$1.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$15.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$22.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/filebrowser/ARFileViewListLoader.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/utils/permissions/ARRunTimeStoragePermissionUtils.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/services/ARConvertServicesAbstractBaseFragment$2.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/services/ARConvertServicesAbstractBaseFragment.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/services/ARConvertServicesAbstractBaseFragment$3.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/services/ARConvertServicesAbstractBaseFragment$8.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/services/ARConvertServicesAbstractBaseFragment$4.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/services/ARConvertServicesAbstractBaseFragment$5.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/misc/ARFileURLDownloadActivity$2.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/misc/ARFileURLDownloadActivity.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/libs/signature/ui/v.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/libs/signature/ui/w.java
+sample_apks/adobe.apk.uncompressed//app/src/com/adobe/libs/b/b/d.java
+
+------------- Occurrences in Source --------------
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/android/support/v13/app/FragmentCompat$BaseFragmentCompatImpl$1.java
+
+    final /* synthetic */ String[] val$permissions;
+    FragmentCompat$BaseFragmentCompatImpl$1(final FragmentCompat$BaseFragmentCompatImpl this$0, final String[] val$permissions, final Fragment val$fragment, final int val$requestCode) {
+        this.val$permissions = val$permissions;
+        final int[] array = new int[this.val$permissions.length];
+            for (int length = this.val$permissions.length, i = 0; i < length; ++i) {
+                array[i] = packageManager.checkPermission(this.val$permissions[i], packageName);
+        ((FragmentCompat$OnRequestPermissionsResultCallback)this.val$fragment).onRequestPermissionsResult(this.val$requestCode, this.val$permissions, array);
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/app/AppOpsManagerCompat$AppOpsManagerImpl.java
+
+    public String permissionToOp(final String s) {
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/app/ActivityCompat$1.java
+
+    final /* synthetic */ String[] val$permissions;
+    ActivityCompat$1(final String[] val$permissions, final Activity val$activity, final int val$requestCode) {
+        this.val$permissions = val$permissions;
+        final int[] array = new int[this.val$permissions.length];
+        for (int length = this.val$permissions.length, i = 0; i < length; ++i) {
+            array[i] = packageManager.checkPermission(this.val$permissions[i], packageName);
+        ((ActivityCompat$OnRequestPermissionsResultCallback)this.val$activity).onRequestPermissionsResult(this.val$requestCode, this.val$permissions, array);
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/app/NotificationManagerCompat$SideChannelManager.java
+
+                    if (resolveInfo.serviceInfo.permission != null) {
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/app/AppOpsManagerCompat.java
+
+    public static String permissionToOp(@NonNull final String s) {
+        return AppOpsManagerCompat.IMPL.permissionToOp(s);
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/app/AppOpsManagerCompat$AppOpsManager23.java
+
+    public String permissionToOp(final String s) {
+        return AppOpsManagerCompat23.permissionToOp(s);
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/app/AppOpsManagerCompat23.java
+
+    public static String permissionToOp(final String s) {
+        return AppOpsManager.permissionToOp(s);
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/content/PermissionChecker.java
+
+            final String permissionToOp = AppOpsManagerCompat.permissionToOp(s);
+            if (permissionToOp == null) {
+            if (AppOpsManagerCompat.noteProxyOp(context, permissionToOp, s2) != 0) {
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/content/FileProvider.java
+
+            throw new SecurityException("Provider must grant uri permissions");
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/android/support/v4/content/ContextCompat.java
+
+            throw new IllegalArgumentException("permission is null");
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$13.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$8.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWLocalFileListFragment.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$7.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$2$2.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWLocalFileListFragment$3.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWLocalFileListFragment$ARDuplicateSelectedFileAsyncTask.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$11.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWLocalFileListFragment$1.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$5$1.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$6$1.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$9.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$4.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$10.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$2$1.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWRecentsListFragment$3.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/framework/ui/FWLocalFileListFragment$4.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$2.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$12.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$16.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$ReleaseScreenDimTimerTask$1.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$16.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$27.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$17.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$11$1.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$34.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$26.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$ReleaseScreenDimTimerTask.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$7.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$31.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$4.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$6.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$UIElementsHandler.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$10.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$13.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$25.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$20.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$28.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$3.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$32.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$33.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$25.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$8.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$23.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$13$1.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$22.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$29.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$24.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$6.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$27$1.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$ARDocumentListSearchView.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$1.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$12.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$28.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARSplitPaneActivity$23.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$24.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$17$1.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$15.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/viewer/ARViewerActivity$22.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/filebrowser/ARFileViewListLoader.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/utils/permissions/ARRunTimeStoragePermissionUtils.java
+
+package com.adobe.reader.utils.permissions;
+        return checkAndRequestStoragePermissionsImpl(activity, null, new String[] { "android.permission.WRITE_EXTERNAL_STORAGE" }, s, n);
+        return checkAndRequestStoragePermissionsImpl(null, fragment, new String[] { "android.permission.WRITE_EXTERNAL_STORAGE" }, s, n);
+        return Build$VERSION.SDK_INT < 23 || context.checkSelfPermission("android.permission.WRITE_EXTERNAL_STORAGE") == 0;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/services/ARConvertServicesAbstractBaseFragment$2.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/services/ARConvertServicesAbstractBaseFragment.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/services/ARConvertServicesAbstractBaseFragment$3.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/services/ARConvertServicesAbstractBaseFragment$8.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/services/ARConvertServicesAbstractBaseFragment$4.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/services/ARConvertServicesAbstractBaseFragment$5.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/misc/ARFileURLDownloadActivity$2.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/reader/misc/ARFileURLDownloadActivity.java
+
+import com.adobe.reader.utils.permissions.*;
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/libs/signature/ui/v.java
+
+        if (!com.adobe.libs.buildingblocks.utils.a.a(this.b, new String[] { "android.permission.WRITE_EXTERNAL_STORAGE" }, 100)) {
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/libs/signature/ui/w.java
+
+        if (!com.adobe.libs.buildingblocks.utils.a.a(this.b, new String[] { "android.permission.CAMERA" }, 200)) {
+
+File:  sample_apks/adobe.apk.uncompressed//app/src/com/adobe/libs/b/b/d.java
+
+        //    77: ldc             "android.permission.WRITE_EXTERNAL_STORAGE"
