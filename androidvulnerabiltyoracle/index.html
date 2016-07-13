@@ -25,8 +25,7 @@
 
  <!-- Put at bottom of page? to help load time?-->
 
-<script>alert("dan");
-
+<script>
 
 
 function getURL(sParam){
@@ -44,7 +43,6 @@ var sPageURL = window.location.search.substring(1);
 
 
 function loadPageData(strPageName){
-  alert("hi!!!");
   switch(strPageName){
 
 
@@ -60,7 +58,6 @@ function loadPageData(strPageName){
 
 
     case "activities":
-    alert("hi!");
     $(document).ready(function(){
         $('#content').load("pages/activities.html"); 
       });
@@ -202,18 +199,18 @@ default:
 </nav>
       <div class="container">
 	<div class="row">
-		<div class="col-sm-12 text-center">
+	<!-- Removed. Too centered	<div class="col-sm-12 text-center" id="content"> -->
 		
     <!-- start main page body -->
 
-<div id="content"></div>
+<div id="content" class="mainContent"></div>
 
 
     <!-- end main page body -->
 
 
 
-		</div>
+		
 	</div>
 </div>
     <footer class="bs-footer" role="contentinfo">
