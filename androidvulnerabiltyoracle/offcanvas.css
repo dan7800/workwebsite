@@ -1,0 +1,157 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+
+
+
+.mainBody{
+
+/* padding-left: 185px; */ /*Creates mobile issues*/
+  
+}
+
+
+.list-group{
+padding-right: 20px;
+
+}
+
+
+.dkActive {
+
+
+  color: #fff;
+  background-color: #383838;
+  /*border-color: #0066CC; */
+
+
+
+  /*color: #fff;*/
+ /* background-color: #0033CC;*/
+  /*border-color: #563d7c;*/
+
+}
+
+
+
+
+.jumbotron {
+  padding-top: 5px;
+}
+
+
+.top-main-image {
+  float: right;
+  clear: both;
+/*  padding: 10px; */
+padding-left: 20px;
+  min-width: 160px;
+  width: 50%;
+  max-width: 300px;
+}
+
+
+
+.pull-left {
+  width: 20%;
+}
+
+
+
+
+
+
+
+/* Show the image information on the main page */
+
+.paragraph-image {
+  float: right; /* Toggle to be right and left */
+  clear: both;
+  padding: 10px;
+  min-width: 160px;
+  width: 50%;
+  max-width: 300px;
+}
+
+/*
+.saso-image img {
+  min-width: 140px;
+  width: 100%;
+  max-width: 280px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+*/
+
+.paragraph-small-image {
+  min-width: 120px;
+  max-width: 220px;
+}
+
+/*
+.saso-small-image img {
+  min-width: 100px;
+  width: 100%;
+  max-width: 200px;
+  padding-bottom: 5px;
+}
+*/
+
