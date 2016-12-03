@@ -111,6 +111,15 @@ case "documentation":
       })
   break;
 
+
+case "funding":
+    $(document).ready(function(){
+        $('#content').load("pages/funding.html"); 
+      });
+      $(window).on('load', function(){
+        $('#fundingNavLink').addClass('dkActive');
+      })
+  break;
   
   
 default:
@@ -162,6 +171,11 @@ default:
 
 
        <li><a href="index.html?page=activities" id="activitiesNavLink" class="animate">Activities</a></li>
+
+
+  <li><a href="index.html?page=funding" id="fundingNavLink" class="animate">Funding</a></li>
+
+
        <li><a href="index.html?page=contribute" id="contributeNavLink" class="animate">Contribute</a></li>
 <!--
        <li><a href="index.html?page=documentation" id="documentationNavLink" class="animate">Documentation</a></li>
@@ -193,7 +207,7 @@ default:
 </div>
     <footer class="bs-footer" role="contentinfo" style="padding-left: 15px;">
  
-&#169; 2016 Teaching Mobile Security
+&#169; 2017 Teaching Mobile Security
 
 
 </footer>
